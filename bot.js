@@ -9,7 +9,10 @@ const {
 const {
     loadState,
     saveState,
-    resetState
+    resetState,
+    loadDay,
+    saveDay,
+    resetDay
 } = require('./state');
 
 const {
@@ -32,18 +35,19 @@ const {
 
 function isDueToday(dueDate, today) {
 
-    return (new Date(dueDate).toLocaleDateString('en-CA') === today);
+    return (new Date(dueDate).setHours(0, 0, 0, 0) === today);
 
 }
 
 function isDueWithinWeek(dueDate) {
 
-    const todayNow = new Date().toLocaleDateString('en-CA');
+    const todayNow = new Date();
 
     const dueDay = new Date(dueDate);
 
     const sevenDaysLater = new Date();
-    sevenDaysLater.setDate(todayNow + 7);
+
+    sevenDaysLater.setDate(todayNow.getDate() + 7);
 
     return dueDay >= todayNow && dueDay <= sevenDaysLater;
 
@@ -51,26 +55,17 @@ function isDueWithinWeek(dueDate) {
 
 (async () => {
 
-    const now = new Date();
+    const hour = new Date().getHours();
 
-    const hour = now.getHours();
+    const today = new Date().toLocaleDateString('en-CA');
 
-    const today =
-        now.toLocaleDateString('en-CA').split('T')[0];
+    const todayForFunc = new Date().setHours(0, 0, 0, 0);
 
     let state = loadState();
 
-    state.sentType1 ??= false;
-    state.sentType2 ??= false;
-    state.sentType3 ??= false;
-    state.sentType4 ??= false;
+    let day = loadDay();
 
     let stateBel = loadStateBel();
-
-    stateBel.sentType1 ??= false;
-    stateBel.sentType2 ??= false;
-    stateBel.sentType3 ??= false;
-    stateBel.sentType4 ??= false;
 
     /*
      * Reset daily state
@@ -80,9 +75,12 @@ function isDueWithinWeek(dueDate) {
 
         state = resetState(today);
 
+	day = resetDay();
+
         saveState(state);
 
-        console.log('State reset.');
+	saveDay(day);
+
     }
 
     if (stateBel.date !== today) {
@@ -98,58 +96,27 @@ function isDueWithinWeek(dueDate) {
     const assignments = await fetchCanvasEvents(process.env.CANVAS_FEED);
     const assignmentsBel = await fetchCanvasEvents(process.env.CANVAS_FEED_BEL);
 
-    const activeAssignments = assignments.filter(assignment => isDueWithinWeek(assignment.dueDate));
-    const activeAssignmentsBel = assignmentsBel.filter(assignmentBel => isDueWithinWeek(assignmentBel.dueDate));
+    const dueToday = assignments.filter(assignment => isDueToday(assignment.dueDate,todayForFunc));
+    const dueTodayBel = assignmentsBel.filter(assignment => isDueToday(assignment.dueDate,todayForFunc));
 
-	const dueToday = [];
-	const dueTodayBel = [];
-
-	const dueInWeek = [];
-	const dueInWeekBel = [];
+    const dueInWeek = assignments.filter(assignment => isDueWithinWeek(assignment.dueDate) && !isDueToday(assignment.dueDate, todayForFunc));
+    const dueInWeekBel = assignmentsBel.filter(assignment => isDueWithinWeek(assignment.dueDate) && !isDueToday(assignment.dueDate, todayForFunc));
 
 
-	for (const assignment of activeAssignments) {
 
-	    if (isDueToday(assignment.dueDate,today)) {
+    await initializeWhatsapp();
 
-	        dueToday.push(assignment);
-
-	    } else {
-
-	        dueInWeek.push(assignment);
-
-	    }
-
-	}
-
-	for (const assignmentBel of activeAssignmentsBel) {
-
-            if (isDueToday(assignmentBel.dueDate,today)) {
-
-                dueTodayBel.push(assignmentBel);
-
-            } else {
-
-                dueInWeekBel.push(assignmentBel);
-
-            }
-
-        }
+    const defaultsentType1 = state.sentType1;
+    const defaultsentType1Bel = stateBel.sentType1;
 
 
-	await initializeWhatsapp();
-
-	const defaultsentType1 = state.sentType1;
-	const defaultsentType1Bel = stateBel.sentType1;
-
-
-	if (hour >= 7 && (!state.sentType1 || !state.sentType2)) {
+    if (hour >= 7 && (!state.sentType1 || !state.sentType2)) {
 
  	   const type1 = formatType1(dueInWeek);
 
 	    const type2 = formatType2(dueToday);
 
-	    if (type1 && !state.sentType1) {
+	    if (type1 && !state.sentType1 && day.day % 2 == 0 && day.day != 6) {
 
 	        await sendMessage(process.env.GROUP_NAME,type1);
 
@@ -175,7 +142,7 @@ function isDueWithinWeek(dueDate) {
 
             const type2Bel = formatType2(dueTodayBel);
 
-            if (type1Bel && !stateBel.sentType1) {
+            if (type1Bel && !stateBel.sentType1 && day.day % 2 ==0 && day.day != 6) {
 
                 await sendMessage(process.env.GROUP_NAME_BEL,type1Bel);
 
@@ -283,6 +250,21 @@ function isDueWithinWeek(dueDate) {
 
         }
 
+	if(!day.updated){
+
+	   day.day = day.day + 1;
+	   day.updated = true;
+
+	}
+
+	if(day.day % 6 == 0){
+
+	   day.week = day.week + 1;
+	   day.day = 0;
+
+	}
+
+	saveDay(day);
 
 	saveState(state);
 	saveStateBel(stateBel);
