@@ -11,8 +11,7 @@ const {
     saveState,
     resetState,
     loadDay,
-    saveDay,
-    resetDay
+    saveDay
 } = require('./state');
 
 const {
@@ -75,11 +74,11 @@ function isDueWithinWeek(dueDate) {
 
         state = resetState(today);
 
-	day = resetDay();
-
         saveState(state);
 
 	saveDay(day);
+
+	day.day = day.day + 1;
 
     }
 
@@ -249,13 +248,6 @@ function isDueWithinWeek(dueDate) {
         }
 
         }
-
-	if(!day.updated){
-
-	   day.day = day.day + 1;
-	   day.updated = true;
-
-	}
 
 	if(day.day % 6 == 0){
 
