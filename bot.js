@@ -29,36 +29,39 @@ const {
     formatType1,
     formatType2,
     formatType3,
-    formatType4
+    formatType4,
+    buildDeadlineList,
+    formatDeadlineTime
 } = require('./message');
 
-function isDueToday(dueDate, today) {
+function isDueToday(dueDate, todayForFunc) {
 
-    return (new Date(dueDate).setHours(0, 0, 0, 0) === today);
+    return ((new Date(dueDate)).setHours(0, 0, 0, 0) === todayForFunc);
 
 }
 
 function isDueWithinWeek(dueDate) {
 
-    const todayNow = new Date();
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
 
-    const dueDay = new Date(dueDate);
+    const due = new Date(dueDate);
+    due.setHours(0, 0, 0, 0);
 
-    const sevenDaysLater = new Date();
+    const sevenDaysLater = new Date(today);
+    sevenDaysLater.setDate(sevenDaysLater.getDate() + 7);
 
-    sevenDaysLater.setDate(todayNow.getDate() + 7);
-
-    return dueDay >= todayNow && dueDay <= sevenDaysLater;
+    return due > today && due <= sevenDaysLater;
 
 }
 
 (async () => {
 
-    const hour = new Date().getHours();
+    const hour = (new Date()).getHours();
 
-    const today = new Date().toLocaleDateString('en-CA');
+    const todayForJson = (new Date()).toLocaleDateString('en-CA');
 
-    const todayForFunc = new Date().setHours(0, 0, 0, 0);
+    const todayForFunc = (new Date()).setHours(0, 0, 0, 0);
 
     let state = loadState();
 
@@ -66,25 +69,21 @@ function isDueWithinWeek(dueDate) {
 
     let stateBel = loadStateBel();
 
-    /*
-     * Reset daily state
-     * at the first 7 AM run.
-     */
-    if (state.date !== today) {
+    if (state.date !== todayForJson) {
 
-        state = resetState(today);
+        state = resetState(todayForJson);
 
         saveState(state);
 
-	saveDay(day);
-
 	day.day = day.day + 1;
+
+	saveDay(day);
 
     }
 
-    if (stateBel.date !== today) {
+    if (stateBel.date !== todayForJson) {
 
-        stateBel = resetStateBel(today);
+        stateBel = resetStateBel(todayForJson);
 
         saveStateBel(stateBel);
 
@@ -98,8 +97,32 @@ function isDueWithinWeek(dueDate) {
     const dueToday = assignments.filter(assignment => isDueToday(assignment.dueDate,todayForFunc));
     const dueTodayBel = assignmentsBel.filter(assignment => isDueToday(assignment.dueDate,todayForFunc));
 
-    const dueInWeek = assignments.filter(assignment => isDueWithinWeek(assignment.dueDate) && !isDueToday(assignment.dueDate, todayForFunc));
-    const dueInWeekBel = assignmentsBel.filter(assignment => isDueWithinWeek(assignment.dueDate) && !isDueToday(assignment.dueDate, todayForFunc));
+    const dueInWeek = assignments.filter(assignment => isDueWithinWeek(assignment.dueDate));
+    const dueInWeekBel = assignmentsBel.filter(assignment => isDueWithinWeek(assignment.dueDate));
+
+
+
+for (let i = dueInWeek.length - 1; i >= 0; i--) {
+
+	const localDueDate = (new Date(dueInWeek[i].dueDate)).setHours(0, 0, 0, 0);
+
+	const daysleft = Math.round((localDueDate - (new Date()).setHours(0, 0, 0, 0)) / (1000 * 60 * 60 * 24));
+
+	let duehour = (new Date(dueInWeek[i].dueDate)).getHours();
+	const dueminute = (new Date(dueInWeek[i].dueDate)).getMinutes();
+
+	if(duehour == 0 && dueminute == 0){
+		duehour = 23;
+	}
+
+	if (daysleft == 1 && duehour < 11){
+
+		dueToday.push(dueInWeek[i]);
+		dueInWeek.splice(i, 1);
+
+	}
+
+}
 
 
 
@@ -119,9 +142,9 @@ function isDueWithinWeek(dueDate) {
 
 	        await sendMessage(process.env.GROUP_NAME,type1);
 
-		state.sentType1 = true;
-
 	    }
+
+		state.sentType1 = true;
 
 	    if (type2 && !state.sentType2) {
 
@@ -145,9 +168,9 @@ function isDueWithinWeek(dueDate) {
 
                 await sendMessage(process.env.GROUP_NAME_BEL,type1Bel);
 
-                stateBel.sentType1 = true;
-
             }
+
+                stateBel.sentType1 = true;
 
             if (type2Bel && !stateBel.sentType2) {
 
@@ -253,10 +276,10 @@ function isDueWithinWeek(dueDate) {
 
 	   day.week = day.week + 1;
 	   day.day = 0;
+	   saveDay(day);
 
 	}
 
-	saveDay(day);
 
 	saveState(state);
 	saveStateBel(stateBel);
