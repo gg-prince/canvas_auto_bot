@@ -1,0 +1,36 @@
+{
+  "majors": {
+    "bse-j26": {
+      "date": "",
+      "announcedAssignments": [
+        "Python Basics: Peer Group Review [Introduction_to_Python_Programming_and_Databases]",
+        "Peer Learning Project I [Introduction_to_Python_Programming_and_Databases]"
+      ],
+      "sentType1": true,
+      "sentType2": false,
+      "sentType3": false,
+      "sentType4": false
+    },
+    "bel-j26": {
+      "date": "",
+      "announcedAssignments": [
+        "Course Pop Quiz 2 [Complex_Problem_Solving]",
+        "Week 10 (Part 1) Quiz [Introduction_to_Grand_Challenges_and_Opportunities]",
+        "Week 10 (Part 2) Quiz [Introduction_to_Grand_Challenges_and_Opportunities]",
+        "Presentation [Professional_Skills_Lab_1]"
+      ],
+      "sentType1": true,
+      "sentType2": false,
+      "sentType3": false,
+      "sentType4": false
+    },
+    "2026-07-02": {
+      "date": "",
+      "announcedAssignments": [],
+      "sentType1": false,
+      "sentType2": false,
+      "sentType3": false,
+      "sentType4": false
+    }
+  }
+}
