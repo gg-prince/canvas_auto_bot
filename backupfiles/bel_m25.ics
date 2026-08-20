@@ -1,0 +1,751 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:icalendar-ruby
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Mugisha Enock Calendar (Canvas)
+X-WR-CALDESC:Calendar events for the user\, Mugisha Enock
+BEGIN:VEVENT
+DTSTAMP:20260813T105100Z
+UID:event-assignment-41060
+DTSTART;VALUE=DATE;VALUE=DATE:20260724
+CLASS:PUBLIC
+DESCRIPTION:Cost Analysis and Application\n-----------------------------\n\
+ nIn  assignment 1\, your team made a presentation to the new board of Cap
+ e Eco Furniture Co.\, focusing on the importance of managerial accounting 
+ in enhancing cost management and operational efficiency. You were able to 
+ analyse the company's current cost structure\, identified areas for optimi
+ zation\, and demonstrated how managerial accounting practices could lead t
+ o improved decision-making and profitability. The board was pleased with y
+ our presentation and having realised issues with  allocating costs to the
+  different product lines\, they have asked for your services again. See th
+ e content below \n\nBackground Information\n----------------------\n\n* R
+ evenue: Last year's total revenue: $5\,000\,000\n\n* Product Lines:\n\n* C
+ ustom Furniture (Job Order Costing)\n\n* Standard Furniture (Process Costi
+ ng)\n\n* Manufacturing Facility:\n\n* Location: Green City Industrial Park
+   Cape town \n\n* Monthly Fixed Costs: $50\,000 (rent\, utilities\, sala
+ ries)\n\n* Variable Costs: $100 per unit for standard items\, varying cost
+ s for custom orders\n\n* Selling price :  $250 per unit for standard item
+ s\, $300 for custom orders\n\nFinancial Data\n--------------\n\n* Standard
+  Furniture Production (per month):\n\n* Units produced: 1\,000\n\n* Direct
+  materials: $30\,000\n\n* Direct labor: $20\,000\n\n* Variable manufacturi
+ ng overhead: $50\,000\n\n* Fixed manufacturing overhead: $30\,000\n\n* Cus
+ tom Furniture Production (per month):\n\n* Average number of orders: 50\n\
+ n* Direct materials: $1\,500 per order\n\n* Direct labor: $800 per order\n
+ \n* Variable manufacturing overhead: $20\,000\n\n* Fixed manufacturing ove
+ rhead: $20\,000\n\n* Selling and Administrative Expenses:\n\n* Fixed costs
+ : $10\,000 per month\n\n* Variable costs: 5% of sales\n\nActivities on cos
+ t Analysis and Application.\n--------------------------------------------\
+ n\nCost Allocation:\n\n* Cape Eco Furniture Co.’s board has asked your t
+ eam to come up with a presentation training junior managers how they  sho
+ uld allocate the manufacturing overhead costs between standard and custom 
+ furniture production.\n\n* Hint: Calculate the overhead allocation for eac
+ h product line using an appropriate method (e.g.\, activity-based costing)
+  and interpret your findings for better decision making. \n\nBreak-Even A
+ nalysis:\n\n* The management needs to understand how the company is able t
+ o make profits. In so doing\, you are tasked to make a presentation about 
+ how to perform a break-even analysis for both product lines and make your 
+ own interpretation about which product line is better for an informed deci
+ sion making \n\n* Hint: Calculate the break-even point in units for stand
+ ard furniture and the break-even point in orders for custom furniture then
+  after compare and determine the better product for decision making.\n\nCo
+ st Control Strategies:\n\n* The board for Cape Eco Furniture Co. also foun
+ d out in the previous presentations that the company was incurring a lot o
+ f costs both fixed and variable. As a team\, you have been employed to res
+ earch and propose strategies that can be used by the company  to control 
+ its variable and fixed costs without compromising its quality. \n\nScenar
+ io Analysis:\n\n* Cape Eco Furniture Co has been advised to increase direc
+ t material cost by 10% in order to increase productivity and profitability
+ . The board is however not convinced with the reasons of the proposers. Th
+ ey have therefore tasked you with analysing the impact of a 10% increase i
+ n direct material costs on Cape Eco Furniture Co.’s profitability and pr
+ oductivity \n\n* Hint: Recalculate the cost structure and determine the n
+ ew break-even points for both product lines and then make a conclusion and
+  a recommendation to the board. \n\nStrategic Decision-Making:\n\n* Based
+  on the findings that you have made about cost analysis\, you are to make 
+ a recommendation to the board on whether Cape Eco Furniture Co.. should fo
+ cus more on custom furniture or standard furniture? Justify your answer wi
+ th financial data.\n\nSubmission Type: PDF file\n\nSee  [Assignment Rubr
+ ic Here] (https://docs.google.com/document/d/1byDBqAYN2mIY1v4wElCKsamvJN35
+ -qDKe7jmsjqdxzQ/edit)\n\nClick 'Next' to access the week's quiz
+SEQUENCE:0
+SUMMARY:Cost Analysis and Application at Cape Eco Furniture Co. Assignment 
+ 2 [Introduction_to_Managerial_Accounting]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2757&month=07&year=2026#assignment_41060
+X-ALT-DESC;FMTTYPE=text/html:<h4><strong>Cost Analysis and Application</str
+ ong></h4>\n<p><span>In&nbsp\; assignment 1\, your team made a presentation
+  to the new board of Cape Eco Furniture Co.\, focusing on the importance o
+ f managerial accounting in enhancing cost management and operational effic
+ iency. You were able to analyse the company's current cost structure\, ide
+ ntified areas for optimization\, and demonstrated how managerial accountin
+ g practices could lead to improved decision-making and profitability. The 
+ board was pleased with your presentation and having realised issues with&n
+ bsp\; allocating costs to the different product lines\, they have asked fo
+ r your services again. See the content below&nbsp\;</span></p>\n<h4><stron
+ g>Background Information</strong></h4>\n<ul>\n<li aria-level="1"><strong>R
+ evenue: </strong><span>Last year's total revenue: $5\,000\,000</span></li>
+ \n<li aria-level="1"><strong>Product Lines:</strong></li>\n<ul>\n<li aria-
+ level="2"><span>Custom Furniture (Job Order Costing)</span></li>\n<li aria
+ -level="2"><span>Standard Furniture (Process Costing)</span></li>\n</ul>\n
+ <li aria-level="1"><strong>Manufacturing Facility:</strong></li>\n<ul>\n<l
+ i aria-level="2"><span>Location: Green City Industrial Park&nbsp\; Cape to
+ wn&nbsp\;</span></li>\n<li aria-level="2"><span>Monthly Fixed Costs: $50\,
+ 000 (rent\, utilities\, salaries)</span></li>\n<li aria-level="2"><span>Va
+ riable Costs: $100 per unit for standard items\, varying costs for custom 
+ orders</span></li>\n<li aria-level="2"><span><span>Selling price :&nbsp\; 
+ $250 per unit for standard items\, $300 for custom orders</span></span></l
+ i>\n</ul>\n</ul>\n<h4><strong>Financial Data</strong></h4>\n<ul>\n<li aria
+ -level="1"><strong>Standard Furniture Production (per month):</strong></li
+ >\n<ul>\n<li aria-level="2"><span>Units produced: 1\,000</span></li>\n<li 
+ aria-level="2"><span>Direct materials: $30\,000</span></li>\n<li aria-leve
+ l="2"><span>Direct labor: $20\,000</span></li>\n<li aria-level="2"><span>V
+ ariable manufacturing overhead: $50\,000</span></li>\n<li aria-level="2"><
+ span>Fixed manufacturing overhead: $30\,000</span></li>\n</ul>\n<li aria-l
+ evel="1"><strong>Custom Furniture Production (per month):</strong></li>\n<
+ ul>\n<li aria-level="2"><span>Average number of orders: 50</span></li>\n<l
+ i aria-level="2"><span>Direct materials: $1\,500 per order</span></li>\n<l
+ i aria-level="2"><span>Direct labor: $800 per order</span></li>\n<li aria-
+ level="2"><span>Variable manufacturing overhead: $20\,000</span></li>\n<li
+  aria-level="2"><span>Fixed manufacturing overhead: $20\,000</span></li>\n
+ </ul>\n<li aria-level="1"><strong>Selling and Administrative Expenses:</st
+ rong></li>\n<ul>\n<li aria-level="2"><span>Fixed costs: $10\,000 per month
+ </span></li>\n<li aria-level="2"><span>Variable costs: 5% of sales</span><
+ /li>\n</ul>\n</ul>\n<h3><strong>Activities on cost Analysis and Applicatio
+ n.</strong></h3>\n<p><strong>Cost Allocation:</strong></p>\n<ul>\n<li aria
+ -level="2"><span>Cape Eco Furniture Co.’s board has asked your team to c
+ ome up with a presentation training junior managers how they&nbsp\; should
+  allocate the manufacturing overhead costs between standard and custom fur
+ niture production.</span></li>\n<li aria-level="2"><strong>Hint:</strong><
+ span> Calculate the overhead allocation for each product line using an app
+ ropriate method (e.g.\, activity-based costing) and interpret your finding
+ s for better decision making.&nbsp\;</span></li>\n</ul>\n<p><strong>Break-
+ Even Analysis:</strong></p>\n<ul>\n<li aria-level="2"><span>The management
+  needs to understand how the company is able to make profits. In so doing\
+ , you are tasked to make a presentation about how to perform a break-even 
+ analysis for both product lines and make your own interpretation about whi
+ ch product line is better for an informed decision making&nbsp\;</span></l
+ i>\n<li aria-level="2"><strong>Hint:</strong><span> Calculate the break-ev
+ en point in units for standard furniture and the break-even point in order
+ s for custom furniture then after compare and determine the better product
+  for decision making.</span></li>\n</ul>\n<p><strong>Cost Control Strategi
+ es:</strong></p>\n<ul>\n<li aria-level="2"><span>The board for Cape Eco Fu
+ rniture Co. also found out in the previous presentations that the company 
+ was incurring a lot of costs both fixed and variable. As a team\, you have
+  been employed to research and propose strategies that can be used by the 
+ company&nbsp\; to control its variable and fixed costs without compromisin
+ g its quality.&nbsp\;</span></li>\n</ul>\n<p><strong>Scenario Analysis:</s
+ trong></p>\n<ul>\n<li aria-level="2"><span>Cape Eco Furniture Co has been 
+ advised to increase direct material cost by 10% in order to increase produ
+ ctivity and profitability. The board is however not convinced with the rea
+ sons of the proposers. They have therefore tasked you with analysing the i
+ mpact of a 10% increase in direct material costs on Cape Eco Furniture Co.
+ ’s profitability and productivity&nbsp\;</span></li>\n<li aria-level="2"
+ ><strong>Hint:</strong><span> Recalculate the cost structure and determine
+  the new break-even points for both product lines and then make a conclusi
+ on and a recommendation to the board.&nbsp\;</span></li>\n</ul>\n<p><stron
+ g>Strategic Decision-Making:</strong></p>\n<ul>\n<li aria-level="2"><span>
+ Based on the findings that you have made about cost analysis\, you are to 
+ make a recommendation to the board on whether Cape Eco Furniture Co.. shou
+ ld focus more on custom furniture or standard furniture? Justify your answ
+ er with financial data.</span></li>\n</ul>\n<p><span>Submission Type: PDF 
+ file</span></p>\n<p><span>See&nbsp\;<strong>&nbsp\;<a class="inline_disabl
+ ed" href="https://docs.google.com/document/d/1byDBqAYN2mIY1v4wElCKsamvJN35
+ -qDKe7jmsjqdxzQ/edit" target="_blank">Assignment Rubric Here</a></strong><
+ /span></p>\n<hr>\n<p><span>Click&nbsp\;</span><strong>'Next'</strong><span
+ >&nbsp\;to access the week's quiz</span></p>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260819T053700Z
+UID:event-assignment-41590
+DTSTART;VALUE=DATE;VALUE=DATE:20260726
+CLASS:PUBLIC
+DESCRIPTION:Overview:\nThe Authentic Leadership Self-Assessment is a reflec
+ tive tool that helps people evaluate their authentic leadership skills by 
+ evaluating leadership across four key dimensions: self-awareness\, interna
+ lized moral perspective\, balanced processing\, and relational transparenc
+ y. This tool provides insights into your leadership strengths and areas fo
+ r growth\, fostering greater alignment with your core values and enabling 
+ you to develop trust\, ethical decision-making\, and effective leadership 
+ practices.\n\nInstructions:\n\n* Complete the Authentic Leadership Self-As
+ sessment questionnaire and upload it on canvas. [Download it here] (https:
+ //alueducation.instructure.com/courses/2727/files/513675?wrap=1)\n\n* Read
+  the chapter on Authentic Leadership available in Perusall to understand t
+ he four dimensions in depth.\n\n* Respond to the following prompt and uplo
+ ad your responses along with your Self-Assessment document:\n\nPrompt (1 P
+ age Response)\n\n* Based on your assessment results and the chapter readin
+ g\, reflect on the dimension in which you scored the highest and share wit
+ h examples how this has served as a strength for you as an emerging leader
+ . \n\n* Reflect on the dimension in which you scored the lowest\, how has
+  this affected your effectiveness as an emerging leader? (share real examp
+ les). 
+SEQUENCE:0
+SUMMARY:Week 5: Authentic Leadership Self-Assessment and Reflection [Africa
+ _s_Leaders]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2727&month=07&year=2026#assignment_41590
+X-ALT-DESC;FMTTYPE=text/html:<p><strong>Overview:</strong><br>The Authentic
+  Leadership Self-Assessment is a reflective tool that helps people evaluat
+ e their authentic leadership skills by evaluating leadership across four k
+ ey dimensions: self-awareness\, internalized moral perspective\, balanced 
+ processing\, and relational transparency. This tool provides insights into
+  your leadership strengths and areas for growth\, fostering greater alignm
+ ent with your core values and enabling you to develop trust\, ethical deci
+ sion-making\, and effective leadership practices.<br><br></p>\n<p><strong>
+ Instructions:</strong></p>\n<ol>\n<li><strong>Complete the Authentic Leade
+ rship Self-Assessment</strong> questionnaire and upload it on canvas. <a i
+ d="258538" class="instructure_file_link instructure_scribd_file inline_dis
+ abled" href="https://alueducation.instructure.com/courses/2727/files/51367
+ 5?wrap=1" target="_blank" data-canvas-previewable="true" data-api-endpoint
+ ="https://alueducation.instructure.com/api/v1/courses/2727/files/513675" d
+ ata-api-returntype="File">Download it here</a></li>\n<li><strong>Read the 
+ chapter on Authentic Leadership </strong>available in Perusall to understa
+ nd the four dimensions in depth.</li>\n<li>Respond to the following prompt
+  and<strong> upload your responses along with your Self-Assessment documen
+ t:</strong></li>\n</ol>\n<p><strong>Prompt (1 Page Response)</strong></p>\
+ n<ol style="list-style-type: decimal\;">\n<li>Based on your assessment res
+ ults and the chapter reading\, reflect on the dimension in which you score
+ d the highest and share with examples how this has served as a strength fo
+ r you as an emerging leader.&nbsp\;</li>\n<li>Reflect on the dimension in 
+ which you scored the lowest\, how has this affected your effectiveness as 
+ an emerging leader? (share real examples).&nbsp\;</li>\n</ol>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260819T124800Z
+UID:event-assignment-41020
+DTSTART;VALUE=DATE;VALUE=DATE:20260726
+CLASS:PUBLIC
+DESCRIPTION:Individual Mission Project\n\n \n\nSummative Instructions\n\nY
+ ou are coming to the end of your Creativity and Innovation course. You hav
+ e grappled with stakeholder analysis\, experimentation\, root cause analys
+ is and problem framing to look at your mission in new and creative ways. Y
+ ou have also learned about the importance of storytelling to help you comm
+ unicate your innovative ideas in compelling ways.\n\nIf you've engaged wit
+ h this process correctly\, the frame of your mission or the lens through w
+ hich you look at it should have changed (even if only slightly). You will 
+ have also become better at telling stories about your mission.\n\nWith thi
+ s in mind\, your submission should speak to the following:\n\n*\n\nWhat is
+  your (updated) mission-related challenge or opportunity? Capture this in 
+ a 50-75 word mission statement or description.\n\n*\n\nUsing the Story Spi
+ ne concept as a guide\, write a short paragraph that tells a story about y
+ our mission\, a protagonist and proposed solution. This should be no more 
+ than 250 words.\n\n* A short reflection on where you see your mission proj
+ ect going. Think about any insights you gained\, mistakes\, surprises and 
+ lessons learned throughout the course. This should be no more than 150 wor
+ ds.\n\n*\n\nSubmit your work as a single PDF or Word Doc. No other file ty
+ pe will be accepted.\n\n* Remember to include a signed plagiarism declarat
+ ion/statement of academic integrity with your submission.\n\n \n\nTips on
+  character development:\n\n* Like any great story\, your story will need a
+  protagonist. Once you have developed your story spine\, spend some time o
+ n character development. Identify the main characters in the story (e.g. t
+ he customer\, the business owner)\, and describe them in detail. What are 
+ their motivations? What challenges do they face? What are their goals? Con
+ sider the challenges that the characters face and how they overcome them (
+ using your business idea).\n\n* And yes\, you can be the protagonist 🙂\
+ n\n \n\n \n\n 
+SEQUENCE:0
+SUMMARY:Week 8 Individual Summative: Mission Statement and Storytelling [Cr
+ eativity_and_Innovation]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2729&month=07&year=2026#assignment_41020
+X-ALT-DESC;FMTTYPE=text/html:<p><strong><span style="font-size: 12pt\; colo
+ r: #002e6d\;">Individual Mission Project</span></strong></p>\n<p>&nbsp\;</
+ p>\n<p><span style="color: #d00d2d\;"><strong><span style="font-size: 12pt
+ \;">Summative Instructions</span></strong></span></p>\n<p><span style="fon
+ t-size: 12pt\; color: #002e6d\;">You are coming to the end of your Creativ
+ ity and Innovation course. You have grappled with stakeholder analysis\, e
+ xperimentation\, root cause analysis and problem framing to look at your m
+ ission in new and creative ways. You have also learned about the importanc
+ e of storytelling to help you communicate your innovative ideas in compell
+ ing ways.</span></p>\n<p><span style="font-size: 12pt\; color: #002e6d\;">
+ If you've engaged with this process correctly\, the frame of your mission 
+ or the lens through which you look at it should have changed (even if only
+  slightly). You will have also become better at telling stories about your
+  mission.</span></p>\n<p><span style="font-size: 12pt\; color: #002e6d\;">
+ With this in mind\, your submission should speak to the following:</span><
+ /p>\n<ul>\n<li aria-level="1">\n<p><span style="font-size: 12pt\; color: #
+ 002e6d\;">What is your (updated) mission-related challenge or opportunity?
+  Capture this in a <strong>50-75 word </strong>mission statement or descri
+ ption.</span></p>\n</li>\n<li aria-level="1">\n<p><span style="font-size: 
+ 12pt\; color: #002e6d\;">Using the Story Spine concept as a guide\, write 
+ a short paragraph that tells a story about your mission\, a protagonist an
+ d proposed solution. This should be no more than <strong>250 words</strong
+ >.</span></p>\n</li>\n<li aria-level="1"><span style="font-size: 12pt\; co
+ lor: #002e6d\;"><span>A short reflection on where you see your mission pro
+ ject going. Think about any insights you gained\, mistakes\, surprises and
+  lessons learned throughout the course. This should be no more than </span
+ ><strong>150 words</strong><span>.</span></span></li>\n<li aria-level="1">
+ \n<p><span style="font-size: 12pt\; color: #002e6d\;">Submit your work as 
+ a single PDF or Word Doc. No other file type will be accepted.</span></p>\
+ n</li>\n<li aria-level="1"><span style="font-size: 12pt\; color: #002e6d\;
+ ">Remember to include a signed plagiarism declaration/statement of academi
+ c integrity with your submission.</span></li>\n</ul>\n<p>&nbsp\;</p>\n<p><
+ span style="font-size: 12pt\; color: #d00d2d\;"><strong>Tips on character 
+ development:</strong></span></p>\n<ul>\n<li><span style="font-size: 12pt\;
+  color: #002e6d\;"><span>Like any great story\, your story will need a pro
+ tagonist. Once you have developed your story spine\, spend some time on ch
+ aracter development. Identify the main characters in the story (e.g. the c
+ ustomer\, the business owner)\, and describe them in detail. What are thei
+ r motivations? What challenges do they face? What are their goals? <span>C
+ onsider the challenges that the characters face and how they overcome them
+  (using your business idea).</span></span></span></li>\n<li><span style="f
+ ont-size: 12pt\; color: #002e6d\;"><span>And yes\, <span style="text-decor
+ ation: underline\;"><em>you</em></span> can be the protagonist 🙂</span>
+ </span></li>\n</ul>\n<p>&nbsp\;</p>\n<p>&nbsp\;</p>\n<p>&nbsp\;</p>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260731T090900Z
+UID:event-assignment-41511
+DTSTART;VALUE=DATE;VALUE=DATE:20260728
+CLASS:PUBLIC
+DESCRIPTION:Case study: Building a Responsible Food System in Pastoral Comm
+ unities in Rural Africa\n-------------------------------------------------
+ -------------------------------------\n\nIn many African communities\, esp
+ ecially pastoralist communities rely heavily on livestock (especially catt
+ le\, goats\, and camels) for their economic livelihoods\, cultural identit
+ y\, and food security. However\, climate change\, land degradation\, popul
+ ation pressures\, and shifting consumption patterns are threatening the su
+ stainability of these traditional systems.\n\nRecurring droughts have led 
+ to massive livestock losses. Meanwhile\, younger generations are moving to
+  cities or showing less interest in traditional herding. Livestock product
+ ion also contributes to methane emissions\, raising questions about enviro
+ nmental sustainability. At the same time\, there is rising demand for meat
+  and dairy in urban areas\, and companies are starting to explore commerci
+ al ventures to “modernize” the sector.\n\nThe challenge is now to desi
+ gn a responsible\, inclusive\, and climate-smart livestock economy that:\n
+ \n* Respects cultural traditions\,\n\n* Empowers pastoralist communities (
+ especially women and youth)\,\n\n* Protects the environment\, and\n\n* Cre
+ ates value through innovation and enterprise.\n\n--------------\nInstructi
+ ons: \n--------------\n\nYour Task:\n\nPick a rural community in Africa\,
+  facing these issues - make sure to pick one that you can do in-depth rese
+ arch on\n(For e.g - The Masai of Kenya and Tanzania\, The Fulani group in 
+ Western Africa and the Banyamulenge in Eastern DRC etc. )\n\nDesign a 12-y
+ ear plan to build a responsible enterprise around sustainable livestock an
+ d food systems in the chosen rural community. Your plan should:\n\n* Pleas
+ e provide a background/context about the chosen rural community in Africa.
+  This should include the geographical\, economical\, social\, and historic
+ al context. \n\n* Craft a clear problem statement.\n\n* Use 4 future arch
+ etypes to describe how this sector could evolve\, where possible use avail
+ able data/trends to describe the below:\n\n* Expected future\n\n* Worse th
+ an expected\n\n* Better than expected\n\n* Weirder than expected\n\n* Base
+ d on the "Better Than Expected" future\, propose 3 human-centered enterpri
+ se ideas\, here is a quick example (come up with a different one in your p
+ resentation):\n\n* Community-owned dairy cooperatives using solar-powered 
+ cooling\n\n* Evaluate your solutions using the below criteria:\n\n* Circul
+ ar economy principles (e.g.\, biogas from waste\, zero-waste dairy product
+ ion)\n\n* Inclusion of marginalized groups (e.g.\, women herders\, nomadic
+  youth)\n\n* CSR principles: ethical sourcing\, animal welfare\, local emp
+ owerment\n\n* Choose a final/best  solution based on the criteria and dem
+ onstrate how those criteria are being fulfilled. \n\n* Develop a 12-year 
+ roadmap using the 3-Horizon Framework demonstrating which and when milesto
+ nes will be achieved\;\n\n* Horizon 1: The way things are\, the current sy
+ stem as it is(0-3 years). \n\n* Horizon 2: How things could be in the sho
+ rt-term\, innovations which\, if developed\, could help bring out a differ
+ ent system(3-5 years). \n\n* Horizon 3: The desired future system which c
+ ould come about with consistent positive progress(5-12 years)\n\n8. For yo
+ ur chosen solution\, provide:\n                  - Stakeholder An
+ alysis\n                  - Cost Analysis\n              
+     - Solution limitations and major challenges\n\n---------------------
+ -----------------\nKindly note the submission guidelines:\n---------------
+ -----------------------\n\n-------------------\nPresentation Format\n-----
+ --------------\n\n* Maximum of 15 slides\n\n* Slides should be visually ap
+ pealing and professionally designed\n\n* Use relevant visuals\, charts\, a
+ nd graphics where appropriate\n\n-----------------------\nFormatting Requi
+ rements\n-----------------------\n\n* Font Type: Montserrat\n\n* Font Size
+  and Color: Consistent and easily readable throughout\n\n* Referencing Sty
+ le: APA 7th Edition\n\n-------------------------------\nVideo Presentation
+  Requirements\n-------------------------------\n\nIn addition to your slid
+ e deck\, you are required to record an individual presentation of your wor
+ k.\n\nYour video must meet the following requirements:\n\n* Maximum length
+ : 7 minutes\n\n* You must present your slides yourself\n\n* Your face must
+  be clearly visible throughout the presentation\n\n* Dress in professional
+  attire\n\n* Record in a quiet\, professional\, and distraction-free envir
+ onment\n\n* Ensure your audio is clear and audible\n\n* Demonstrate famili
+ arity with your work rather than reading directly from the slides\n\nPleas
+ e note that presentation quality\, professionalism\, and clarity of commun
+ ication will form part of the assessment.\n\n-----------------------\nSubm
+ ission Deliverables\n-----------------------\n\n* PowerPoint/PDF slide dec
+ k with a link to your video recording of your presentation (7 minutes maxi
+ mum)\n\n \n\n 
+SEQUENCE:0
+SUMMARY:Summative:  [Responsible_Enterprise]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2814&month=07&year=2026#assignment_41511
+X-ALT-DESC;FMTTYPE=text/html:<h3><span style="font-size: 14pt\;"><span>Case
+  study</span><i><span>: </span></i><strong><i>Building a Responsible Food 
+ System in Pastoral Communities in Rural Africa</i></strong></span></h3>\n<
+ p><span>In many African communities\, especially pastoralist communities r
+ ely heavily on livestock (especially cattle\, goats\, and camels) for thei
+ r economic livelihoods\, cultural identity\, and food security. However\, 
+ climate change\, land degradation\, population pressures\, and shifting co
+ nsumption patterns are threatening the sustainability of these traditional
+  systems.</span></p>\n<p><span>Recurring droughts have led to massive live
+ stock losses. Meanwhile\, younger generations are moving to cities or show
+ ing less interest in traditional herding. Livestock production also contri
+ butes to methane emissions\, raising questions about environmental sustain
+ ability. At the same time\, there is rising demand for meat and dairy in u
+ rban areas\, and companies are starting to explore commercial ventures to 
+ “modernize” the sector.</span></p>\n<p><span>The challenge is now to d
+ esign a responsible\, inclusive\, and climate-smart livestock economy that
+ :</span></p>\n<ul>\n<li aria-level="1"><span>Respects cultural traditions\
+ ,</span></li>\n<li aria-level="1"><span>Empowers pastoralist communities (
+ especially women and youth)\,</span></li>\n<li aria-level="1"><span>Protec
+ ts the environment\, and</span></li>\n<li aria-level="1"><span>Creates val
+ ue through innovation and enterprise.</span></li>\n</ul>\n<h2><em><strong>
+ Instructions:&nbsp\;</strong></em></h2>\n<p><span>Your Task:</span></p>\n<
+ p><span>Pick a rural community in Africa\, facing these issues - make sure
+  to pick one that you can do in-depth research on</span><span><br></span><
+ span>(For e.g - The Masai of Kenya and Tanzania\, The Fulani group in West
+ ern Africa and the Banyamulenge in Eastern DRC etc. )</span><span><br></sp
+ an><span><br></span><span>Design a 12-year plan to build a responsible ent
+ erprise around sustainable livestock and food systems in the chosen rural 
+ community. Your plan should:</span></p>\n<ol>\n<li aria-level="1"><span>Pl
+ ease provide a background/context about the chosen rural community in Afri
+ ca. This should include the geographical\, economical\, social\, and histo
+ rical context.&nbsp\;</span></li>\n<li aria-level="1"><span>Craft a clear 
+ problem statement.</span></li>\n<li aria-level="1"><span>Use 4 future arch
+ etypes to describe how this sector could evolve\, where possible use avail
+ able data/trends to describe the below:</span><span><br><br></span></li>\n
+ <ul>\n<li aria-level="2"><span>Expected future</span></li>\n<li aria-level
+ ="2"><span>Worse than expected</span></li>\n<li aria-level="2"><span>Bette
+ r than expected</span></li>\n<li aria-level="2"><span>Weirder than expecte
+ d</span><span><br><br></span></li>\n</ul>\n<li aria-level="1"><span>Based 
+ on the "Better Than Expected" future\, propose 3 human-centered enterprise
+  ideas\, here is a quick example (come up with a different one in your pre
+ sentation):</span><span><br><br></span></li>\n<ul>\n<li aria-level="2"><sp
+ an>Community-owned dairy cooperatives using solar-powered cooling</span><s
+ pan><br><br></span></li>\n</ul>\n<li aria-level="1"><span>Evaluate your so
+ lutions using the below criteria:</span><span><br><br></span></li>\n<ul>\n
+ <li aria-level="2"><span>Circular economy principles (e.g.\, biogas from w
+ aste\, zero-waste dairy production)</span></li>\n<li aria-level="2"><span>
+ Inclusion of marginalized groups (e.g.\, women herders\, nomadic youth)</s
+ pan></li>\n<li aria-level="2"><span>CSR principles: ethical sourcing\, ani
+ mal welfare\, local empowerment</span><span><br><br></span></li>\n</ul>\n<
+ li aria-level="1"><span>Choose a final/best&nbsp\; solution based on the c
+ riteria and demonstrate how those criteria are being fulfilled.&nbsp\;</sp
+ an></li>\n<li aria-level="1"><span>Develop a 12-year roadmap using the 3-H
+ orizon Framework demonstrating which and when milestones will be achieved\
+ ;</span></li>\n</ol>\n<ul>\n<li aria-level="1"><span>Horizon 1: The way th
+ ings are\, the current system as it is(0-3 years).&nbsp\;</span></li>\n<li
+  aria-level="1"><span>Horizon 2: How things could be in the short-term\, i
+ nnovations which\, if developed\, could help bring out a different system(
+ 3-5 years).&nbsp\;</span></li>\n<li aria-level="1"><span>Horizon 3: The de
+ sired future system which could come about with consistent positive progre
+ ss(5-12 years)</span></li>\n</ul>\n<p><span>8. For your chosen solution\, 
+ provide:</span><span><br></span><span>&nbsp\; &nbsp\; &nbsp\; &nbsp\; &nbs
+ p\; &nbsp\; &nbsp\; &nbsp\; &nbsp\; - Stakeholder Analysis</span><span><br
+ ></span><span>&nbsp\; &nbsp\; &nbsp\; &nbsp\; &nbsp\; &nbsp\; &nbsp\; &nbs
+ p\; &nbsp\; - Cost Analysis</span><span><br></span><span>&nbsp\; &nbsp\; &
+ nbsp\; &nbsp\; &nbsp\; &nbsp\; &nbsp\; &nbsp\; &nbsp\; - Solution limitati
+ ons and major challenges</span></p>\n<h2><strong><em>Kindly note the submi
+ ssion guidelines:</em></strong></h2>\n<h2><em>Presentation Format</em></h2
+ >\n<ul data-spread="false">\n<li><span>Maximum of 15 slides</span></li>\n<
+ li><span>Slides should be visually appealing and professionally designed</
+ span></li>\n<li><span>Use relevant visuals\, charts\, and graphics where a
+ ppropriate</span></li>\n</ul>\n<h2><span style="color: #e62429\;"><em>Form
+ atting Requirements</em></span></h2>\n<ul data-spread="false">\n<li><span>
+ Font Type: Montserrat</span></li>\n<li><span>Font Size and Color: Consiste
+ nt and easily readable throughout</span></li>\n<li><span>Referencing Style
+ : APA 7th Edition</span></li>\n</ul>\n<h2><em><span style="color: #e62429\
+ ;">Video Presentation Requirements</span></em></h2>\n<p class="isSelectedE
+ nd"><span>In addition to your slide deck\, you are required to record an i
+ ndividual presentation of your work.</span></p>\n<p class="isSelectedEnd">
+ <span>Your video must meet the following requirements:</span></p>\n<ul dat
+ a-spread="false">\n<li><span>Maximum length: 7 </span><strong><span>minute
+ s</span></strong></li>\n<li><span>You must present your slides yourself</s
+ pan></li>\n<li><span>Your face must be clearly visible throughout the pres
+ entation</span></li>\n<li><span>Dress in professional attire</span></li>\n
+ <li><span>Record in a quiet\, professional\, and distraction-free environm
+ ent</span></li>\n<li><span>Ensure your audio is clear and audible</span></
+ li>\n<li><span>Demonstrate familiarity with your work rather than reading 
+ directly from the slides</span></li>\n</ul>\n<p class="isSelectedEnd"><spa
+ n>Please note that presentation quality\, professionalism\, and clarity of
+  communication will form part of the assessment.</span></p>\n<h2><em><stro
+ ng>Submission Deliverables</strong></em></h2>\n<ol start="1" data-spread="
+ false">\n<li><strong><span style="color: #000000\;"><em>PowerPoint/PDF sli
+ de deck with a link to your video recording of your presentation (7 minute
+ s maximum)</em></span></strong></li>\n</ol>\n<p>&nbsp\;</p>\n<p>&nbsp\;</p
+ >
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260818T014600Z
+UID:event-assignment-40078
+DTSTART;VALUE=DATE;VALUE=DATE:20260730
+CLASS:PUBLIC
+DESCRIPTION:WEEK 4: Research Paper\n\nIn this assignment\, you will researc
+ h the health problem you are addressing in your mission. Formulate an argu
+ ment regarding the cause of this problem or a proposed solution. Support a
+ nd substantiate your arguments with reputable scholarly research and popul
+ ar press sources\, ensuring all are correctly and comprehensively cited.\n
+ \nYour introductory paragraph should provide a brief overview of the probl
+ em and include a compelling thesis statement. Interpret the findings in re
+ lation to the research question or hypothesis\, and propose areas for furt
+ her investigation based on these findings.\n\n \n\nIn this assignment\, y
+ ou will investigate the health problem you are focusing on in your mission
+ . Follow these steps to complete your research paper:\n\n* Research the He
+ alth Problem:\n\n* Identify the Issue: Clearly define the health problem 
+ you are addressing. Provide background information to give context to your
+  research.\n\n* Gather Evidence: Use reputable sources\, including schola
+ rly articles and popular press\, to gather information about the health pr
+ oblem. Ensure that all sources are credible and relevant.\n\n* Formulate a
+ n Argument:\n\n* Develop a thesis: Based on your research\, formulate a c
+ lear and compelling argument. Decide whether you want to argue about the c
+ ause of the health problem or propose a solution.\n\n* Support Your Argume
+ nt: Use evidence from your research to support your argument. Make sure t
+ o include data\, facts\, and examples that reinforce your position.\n\n* C
+ ite Your Sources:\n\n* Proper Citations: Accurately and comprehensively c
+ ite all the sources you use in your paper. USE APA citation style for both
+  scholarly research and popular press sources.\n\n* Write Your Paper:\n\n*
+  Introduction: Start with a brief overview of the health problem. Clearly
+  state your thesis\, which is the main argument or point of your paper.\n\
+ n* Discussion: In the body of your paper\, interpret your findings in rel
+ ation to the research question or hypothesis. Discuss how your evidence su
+ pports your argument.\n\n* Propose Future Research: Based on your finding
+ s\, suggest areas where further research is needed. Explain why these area
+ s are important and how they could contribute to solving the health proble
+ m.\n\n* Conclusion:\n\n* Summarize Key Points: Recap the main findings of
+  your research and how they support your argument.\n\n* Restate Thesis: R
+ eiterate your thesis in light of the evidence presented.\n\n  6. Recommen
+ dations: Offer recommendations or insights based on your analysis and sug
+ gest practical steps for addressing the health problem.\n\nNotes: \n\n* B
+ e sure to include at least five reliable sources (the sources have to be
+  among the following: peer-reviewed articles\, official documents from gov
+ ernments or relevant organizations). Also cite all the sources of informat
+ ion used in your work. Follow APA 7 citation style.\n\n* You can use other
+  sources as an addition to support the required items if they are relevant
+  to your topic.\n\n* You can use AI tools to brainstorm\, but do not cop
+ y-paste AI-generated answers as your own. If you happen to use AI\, inclu
+ de an annex section after the reference list showing all the prompts and 
+ outputs you used in your brainstorming.\n\n* Using Generative AI tools and
+  not recognizing it will be considered as academic misconduct.\n\nSubmissi
+ on:\n\nSubmit a PDF document. Links to Google Docs won't be accepted.
+SEQUENCE:0
+SUMMARY:Introduction to Global Health Summative [Introduction_to_Global_Hea
+ lth]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2758&month=07&year=2026#assignment_40078
+X-ALT-DESC;FMTTYPE=text/html:<p><strong>WEEK 4: Research Paper</strong></p>
+ \n<p><span>In this assignment\, you will research the health problem you a
+ re addressing in your mission. Formulate an argument regarding the cause o
+ f this problem or a proposed solution. Support and substantiate your argum
+ ents with reputable scholarly research and popular press sources\, ensurin
+ g all are correctly and comprehensively cited.</span></p>\n<p><span>Your i
+ ntroductory paragraph should provide a brief overview of the problem and i
+ nclude a compelling thesis statement. Interpret the findings in relation t
+ o the research question or hypothesis\, and propose areas for further inve
+ stigation based on these findings.</span></p>\n<p>&nbsp\;</p>\n<p><span>In
+  this assignment\, you will investigate the health problem you are focusin
+ g on in your mission. Follow these steps to complete your research paper:<
+ /span></p>\n<ol>\n<li aria-level="1"><strong>Research the Health Problem:<
+ /strong></li>\n<ul>\n<li aria-level="2"><strong>Identify the Issue:</stron
+ g><span>&nbsp\;Clearly define the health problem you are addressing. Provi
+ de background information to give context to your research.</span></li>\n<
+ li aria-level="2"><strong>Gather Evidence:</strong><span>&nbsp\;Use reputa
+ ble sources\, including scholarly articles and popular press\, to gather i
+ nformation about the health problem. Ensure that all sources are credible 
+ and relevant.</span></li>\n</ul>\n<li aria-level="1"><strong>Formulate an 
+ Argument:</strong></li>\n<ul>\n<li aria-level="2"><strong>Develop a thesis
+ :</strong><span>&nbsp\;Based on your research\, formulate a clear and comp
+ elling argument. Decide whether you want to argue about the cause of the h
+ ealth problem or propose a solution.</span></li>\n<li aria-level="2"><stro
+ ng>Support Your Argument:</strong><span>&nbsp\;Use evidence from your rese
+ arch to support your argument. Make sure to include data\, facts\, and exa
+ mples that reinforce your position.</span></li>\n</ul>\n<li aria-level="1"
+ ><strong>Cite Your Sources:</strong></li>\n<ul>\n<li aria-level="2"><stron
+ g>Proper Citations:</strong><span>&nbsp\;Accurately and comprehensively ci
+ te all the sources you use in your paper. USE APA citation style for both 
+ scholarly research and popular press sources.</span></li>\n</ul>\n<li aria
+ -level="1"><strong>Write Your Paper:</strong></li>\n<ul>\n<li aria-level="
+ 2"><strong>Introduction:</strong><span>&nbsp\;Start with a brief overview 
+ of the health problem. Clearly state your thesis\, which is the main argum
+ ent or point of your paper.</span></li>\n<li aria-level="2"><strong>Discus
+ sion:</strong><span>&nbsp\;In the body of your paper\, interpret your find
+ ings in relation to the research question or hypothesis. Discuss how your 
+ evidence supports your argument.</span></li>\n<li aria-level="2"><strong>P
+ ropose Future Research:</strong><span>&nbsp\;Based on your findings\, sugg
+ est areas where further research is needed. Explain why these areas are im
+ portant and how they could contribute to solving the health problem.</span
+ ></li>\n</ul>\n<li aria-level="1"><strong>Conclusion:</strong></li>\n<ul>\
+ n<li aria-level="2"><strong>Summarize Key Points:</strong><span>&nbsp\;Rec
+ ap the main findings of your research and how they support your argument.<
+ /span></li>\n<li aria-level="2"><strong>Restate Thesis:</strong><span>&nbs
+ p\;Reiterate your thesis in light of the evidence presented.</span></li>\n
+ </ul>\n</ol>\n<p><strong>&nbsp\; 6. Recommendations:</strong><span>&nbsp\;
+ Offer recommendations or insights based on your analysis and suggest pract
+ ical steps for addressing the health problem.</span></p>\n<p><span><strong
+ >Notes:&nbsp\;</strong></span></p>\n<ul>\n<li aria-level="1"><span>Be sure
+  to include at least&nbsp\;</span><strong>five<span>&nbsp\;</span></strong
+ ><span>reliable sources (the sources have to be among the following: peer-
+ reviewed articles\, official documents from governments or relevant organi
+ zations). Also cite all the sources of information used in your work. Foll
+ ow APA 7 citation style.</span></li>\n<li aria-level="1"><span>You can use
+  other sources as an addition to support the required items if they are re
+ levant to your topic.</span></li>\n<li aria-level="1"><span>You can use AI
+  tools to brainstorm\, but&nbsp\;</span><strong>do not<span>&nbsp\;</span>
+ </strong><span>copy-paste AI-generated answers as your own. If you happen 
+ to use AI\,&nbsp\;</span><strong>include an annex section</strong><span>&n
+ bsp\;after the reference list showing all the prompts and outputs you used
+  in your brainstorming.</span></li>\n<li aria-level="1"><span>Using Genera
+ tive AI tools and not recognizing it will be considered as academic miscon
+ duct.</span></li>\n</ul>\n<p><span><strong>Submission:</strong></span></p>
+ \n<p><span>Submit a PDF document. <strong>Links to Google Docs</strong> wo
+ n't be accepted.</span></p>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260518T170600Z
+UID:event-assignment-42066
+DTSTART;VALUE=DATE;VALUE=DATE:20260731
+CLASS:PUBLIC
+SEQUENCE:0
+SUMMARY:Financial Planning for Young Adults: Module 5: Borrowing and Credit
+  [Financial Planning for Young Adults]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2973&month=07&year=2026#assignment_42066
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260511T101400Z
+UID:event-assignment-42186
+DTSTART;VALUE=DATE;VALUE=DATE:20260802
+CLASS:PUBLIC
+SEQUENCE:0
+SUMMARY:Making the most of learning with Perusall [Africa_s_Leaders]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2727&month=08&year=2026#assignment_42186
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T065700Z
+UID:event-assignment-41074
+DTSTART;VALUE=DATE;VALUE=DATE:20260804
+CLASS:PUBLIC
+DESCRIPTION:Summative Assignment: Strategic Cost Management and Performance
+  Improvement \n\nThis managerial accounting project presentation aims to 
+ provide you with an in-depth understanding of strategic cost management pr
+ inciples and their application in improving organisational performance. Ov
+ er the course of four weeks\, You have  worked on analysing cost structur
+ es\, identifying cost drivers\, implementing cost reduction strategies\, a
+ nd evaluating performance metrics to enhance decision-making capabilities 
+ within Cape Eco Furniture Co\n\nObjective: The major purpose is for you to
+  present findings\, recommendations\, and implementation plans to stakehol
+ ders including senior management \n\n Instructions \n\n* Present your f
+ indings and recommendations to the board of  Cape Eco Furniture Co\n\nYou
+ r presentation should include the following\n\n* Cape Eco Furniture Co's b
+ ackground\,  business model\, products/services offered\, market position
+ \, and financial performance.\n\n* Issues presented by the Cape Eco Furnit
+ ure Co. board\n\n* Cost analysis and potential areas for cost reduction an
+ d efficiency improvement within Cape Eco Furniture Co's operations.\n\n* C
+ ost reduction strategies that can be used by Cape Eco Furniture Co to redu
+ ce the costs\n\n* Feasibility and potential impact of proposed initiatives
+  on the Cape Eco Furniture Co's long-term success.\n\n* Performance metric
+ s and KPIs to monitor the effectiveness of cost reduction efforts.\n\n* Re
+ commendations for Cape Eco Furniture Co growth \n\n* Conclusion \n\n* Re
+ ferences \n\nSubmission \n\n* Slide deck maximum of 12 slides  includin
+ g all the aspects of the project as discussed above.\n\n* Video recording 
+ of between 8-9 minutes max involving all team members explaining the slide
+ s\n\nSubmission type: PDF file\n\n[Click here to view submission Rubric] (
+ https://docs.google.com/document/d/1LqUMViZ0AGA7ZR9oUtcPEEkiQo6uIbim5YEzzT
+ -rrf0/edit)
+SEQUENCE:0
+SUMMARY:Strategic Cost Management and Performance Improvement  [Introductio
+ n_to_Managerial_Accounting]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2757&month=08&year=2026#assignment_41074
+X-ALT-DESC;FMTTYPE=text/html:<p><strong>Summative Assignment: Strategic Cos
+ t Management and Performance Improvement&nbsp\;</strong></p>\n<p><span>Thi
+ s managerial accounting project presentation aims to provide you with an i
+ n-depth understanding of strategic cost management principles and their ap
+ plication in improving organisational performance. Over the course of four
+  weeks\, You have&nbsp\; worked on analysing cost structures\, identifying
+  cost drivers\, implementing cost reduction strategies\, and evaluating pe
+ rformance metrics to enhance decision-making capabilities within Cape Eco 
+ Furniture Co</span></p>\n<p><strong>Objective</strong><span>: The major pu
+ rpose is for you to present findings\, recommendations\, and implementatio
+ n plans to stakeholders including senior management&nbsp\;</span></p>\n<p>
+ <span>&nbsp\;</span><strong>Instructions&nbsp\;</strong></p>\n<ul>\n<li ar
+ ia-level="1"><span>Present your findings and recommendations to the board 
+ of&nbsp\; Cape Eco Furniture Co</span></li>\n</ul>\n<p><strong>Your presen
+ tation should include the following</strong></p>\n<ol>\n<li aria-level="1"
+ ><span>Cape Eco Furniture Co's background\,&nbsp\; business model\, produc
+ ts/services offered\, market position\, and financial performance.</span><
+ /li>\n<li aria-level="1"><span>Issues presented by the Cape Eco Furniture 
+ Co. board</span></li>\n<li aria-level="1"><span>Cost analysis and potentia
+ l areas for cost reduction and efficiency improvement within Cape Eco Furn
+ iture Co's operations.</span></li>\n<li aria-level="1"><span>Cost reductio
+ n strategies that can be used by Cape Eco Furniture Co to reduce the costs
+ </span></li>\n<li aria-level="1"><span>Feasibility and potential impact of
+  proposed initiatives on the Cape Eco Furniture Co's long-term success.</s
+ pan></li>\n<li aria-level="1"><span>Performance metrics and KPIs to monito
+ r the effectiveness of cost reduction efforts.</span></li>\n<li aria-level
+ ="1"><span>Recommendations for Cape Eco Furniture Co growth&nbsp\;</span><
+ /li>\n<li aria-level="1"><span>Conclusion&nbsp\;</span></li>\n<li aria-lev
+ el="1"><span>References&nbsp\;</span></li>\n</ol>\n<p><strong>Submission&n
+ bsp\;</strong></p>\n<ul>\n<li aria-level="1"><span>Slide deck maximum of 1
+ 2 slides&nbsp\; including all the aspects of the project as discussed abov
+ e.</span></li>\n<li aria-level="1"><span>Video recording of between 8-9 mi
+ nutes max involving all team members explaining the slides</span></li>\n</
+ ul>\n<p><strong>Submission type</strong><span>: PDF file</span></p>\n<p><a
+  href="https://docs.google.com/document/d/1LqUMViZ0AGA7ZR9oUtcPEEkiQo6uIbi
+ m5YEzzT-rrf0/edit"><strong>Click here to view submission Rubric</strong></
+ a></p>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260518T170700Z
+UID:event-assignment-42067
+DTSTART;VALUE=DATE;VALUE=DATE:20260816
+CLASS:PUBLIC
+SEQUENCE:0
+SUMMARY:Financial Planning for Young Adults: Module 6 Investing [Financial 
+ Planning for Young Adults]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2973&month=08&year=2026#assignment_42067
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260518T170700Z
+UID:event-assignment-42068
+DTSTART;VALUE=DATE;VALUE=DATE:20260831
+CLASS:PUBLIC
+SEQUENCE:0
+SUMMARY:Financial Planning for Young Adults: Risk Management Quiz [Financia
+ l Planning for Young Adults]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2973&month=08&year=2026#assignment_42068
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260728T091500Z
+UID:event-assignment-42189
+DTSTART;VALUE=DATE;VALUE=DATE:20260831
+CLASS:PUBLIC
+DESCRIPTION:
+SEQUENCE:0
+SUMMARY:Well Being & Self Care: for Physical and Mental Health [WELL BEING 
+ & SELF CARE]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2972&month=08&year=2026#assignment_42189
+X-ALT-DESC;FMTTYPE=text/html:
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260518T170900Z
+UID:event-assignment-override-9100
+DTSTART;VALUE=DATE;VALUE=DATE:20260904
+CLASS:PUBLIC
+DESCRIPTION:
+SEQUENCE:0
+SUMMARY:Certificate Submission (May 2026_January 2023) [Financial Planning 
+ for Young Adults]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2973&month=09&year=2026#assignment_42074
+X-ALT-DESC;FMTTYPE=text/html:
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260603T151900Z
+UID:event-assignment-42061
+DTSTART;VALUE=DATE;VALUE=DATE:20260910
+CLASS:PUBLIC
+DESCRIPTION:
+SEQUENCE:0
+SUMMARY:Financial Planning for Young Adults [Financial Planning for Young A
+ dults]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2973&month=09&year=2026#assignment_42061
+X-ALT-DESC;FMTTYPE=text/html:
+END:VEVENT
+END:VCALENDAR

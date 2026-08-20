@@ -1,0 +1,527 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:icalendar-ruby
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Wilson Nshizirungu Calendar (Canvas)
+X-WR-CALDESC:Calendar events for the user\, Wilson Nshizirungu
+BEGIN:VEVENT
+DTSTAMP:20260817T075300Z
+UID:event-assignment-41109
+DTSTART;VALUE=DATE;VALUE=DATE:20260726
+CLASS:PUBLIC
+DESCRIPTION:----------\nObjective:\n----------\n\nProduce a research and en
+ gineering poster that clearly communicates your final project.\n\nYou will
+  be provided with a LaTeX poster template ([PDF] (https://drive.google.com
+ /file/d/1SuTHaj9bLaWrai8mIYmK9wexUDZM7-3D/view?usp=sharing) and [TEX] (htt
+ ps://drive.google.com/file/d/1nCGU43iB_8MtgABuRtDL8Uj6YAoeAN1u/view?usp=sh
+ aring)) . The template is only a starting point and must be improved and c
+ ustomized to suit your project.\n\nStudents must edit the LaTeX template\,
+  compile it\, and submit the final poster as a PDF.\n\nFind the ALU Logo f
+ ile [here] (https://drive.google.com/file/d/1UdWliNnNhaybZHMdraj1yFkpGrqAe
+ vL5/view?usp=sharing)\n\n-------------\nInstructions:\n-------------\n\n1.
+  Use the Provided Template\n----------------------------\n\nYou will use 
+ the LaTeX poster template.\n\nStudents must:\n\n*\n\nUse the template as a
+  starting point\n\n*\n\nImprove the design and layout\n\n*\n\nReplace all 
+ placeholder content with their own work\n\n*\n\nAdd diagrams\, screenshots
+ \, charts\, or architecture visuals\n\n*\n\nEnsure the poster clearly comm
+ unicates the project\n\n* Compile the LaTeX file to generate the final pos
+ ter\n\nThe template must not be submitted as-is. You are expected to adapt
+  and improve it for your project.\n\n2. Poster Content\n-----------------
+ \n\nYour poster should communicate the key aspects of your project. The te
+ mplate includes sections such as:\n\n*\n\nProblem\, Context\, and Users\n\
+ n*\n\nObjectives and Scope\n\n*\n\nProject Metadata\n\n*\n\nConstraints an
+ d Design Decisions\n\n*\n\nProposed Solution and System Overview\n\n*\n\nM
+ ethodology and Build Process\n\n*\n\nResults\, Evaluation\, and Demo Evide
+ nce\n\n*\n\nImpact\, Contribution\, and Learning\n\n*\n\nLimitations and N
+ ext Steps\n\n*\n\nReferences and Acknowledgements\n\nYou may adjust or ref
+ ine these sections if needed to better present your project.\n\nFocus on:\
+ n\n*\n\nclear explanations\n\n*\n\nstrong visuals\n\n*\n\nconcise text\n\n
+ Avoid large blocks of text.\n\n3. Team Participation:\n-------------------
+ ---\n\n* Ensure that all team members contribute to the poster presentatio
+ n. Each member should be responsible for a specific part of the demo or ex
+ planation (e.g.\, overview\, features\, technical overview\, system archit
+ ecture\, technical challenges\, feedback).\n\n*\n\nPresentation format:\n\
+ n*\n\n7–10 minutes presentation\n\n*\n\n3 minutes Q&A\n\n4. Prepare for 
+ Q&A:\n-------------------\n\n* After the demo\, be prepared to answer ques
+ tions. Focus on addressing questions related to the technical implementati
+ on\, the impact on the project\, and the future potential of your solution
+ .\n\n-----------\nSubmission:\n-----------\n\n* Submit the compiled poster
+  PDF and any demo materials before the presentation.\n\n* Present live to 
+ the class during the final session.\n\n*\n\nFile name format:\n\nTeamName_
+ ProjectPoster.pdf\n\nSubmission rules:\n\n*\n\nOne submission per team\n\n
+ *\n\nSubmit through Canvas\n\n*\n\nLate submissions follow the standard co
+ urse late policy.
+SEQUENCE:0
+SUMMARY:Poster Presentation [Foundations_Project]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2780&month=07&year=2026#assignment_41109
+X-ALT-DESC;FMTTYPE=text/html:<h2><strong>Objective</strong>:</h2>\n<p data-
+ start="416" data-end="507">Produce a <strong data-start="426" data-end="46
+ 1">research and engineering poster</strong> that clearly communicates your
+  final project.</p>\n<p data-start="509" data-end="667">You will be provid
+ ed with a <strong data-start="537" data-end="562">LaTeX poster template (<
+ a class="inline_disabled" href="https://drive.google.com/file/d/1SuTHaj9bL
+ aWrai8mIYmK9wexUDZM7-3D/view?usp=sharing" target="_blank">PDF</a> and <a c
+ lass="inline_disabled" href="https://drive.google.com/file/d/1nCGU43iB_8Mt
+ gABuRtDL8Uj6YAoeAN1u/view?usp=sharing" target="_blank">TEX</a>) </strong>.
+  The template is <strong data-start="580" data-end="605">only a starting p
+ oint</strong> and must be <strong data-start="618" data-end="645">improved
+  and customized</strong> to suit your project.</p>\n<p data-start="669" da
+ ta-end="761">Students must <strong data-start="683" data-end="760">edit th
+ e LaTeX template\, compile it\, and submit the final poster as a PDF</stro
+ ng>.</p>\n<p data-start="669" data-end="761">Find the ALU Logo file <a cla
+ ss="inline_disabled" href="https://drive.google.com/file/d/1UdWliNnNhaybZH
+ Mdraj1yFkpGrqAevL5/view?usp=sharing" target="_blank">here</a></p>\n<hr>\n<
+ h2><strong>Instructions</strong>:</h2>\n<h4><strong>1.&nbsp\;</strong><str
+ ong data-start="860" data-end="892">Use the Provided Template</strong></h4
+ >\n<p data-start="894" data-end="939">You will use the <strong data-start=
+ "913" data-end="938">LaTeX poster template</strong>.</p>\n<p data-start="9
+ 41" data-end="955">Students must:</p>\n<ul data-start="957" data-end="1203
+ ">\n<li data-section-id="1qgfwql" data-start="957" data-end="999">\n<p dat
+ a-start="959" data-end="999">Use the template <strong data-start="976" dat
+ a-end="999">as a starting point</strong></p>\n</li>\n<li data-section-id="
+ 1v0ft2g" data-start="1000" data-end="1035">\n<p data-start="1002" data-end
+ ="1035"><strong data-start="1002" data-end="1035">Improve the design and l
+ ayout</strong></p>\n</li>\n<li data-section-id="1o3j8go" data-start="1036"
+  data-end="1089">\n<p data-start="1038" data-end="1089">Replace all placeh
+ older content with their own work</p>\n</li>\n<li data-section-id="19xlbcc
+ " data-start="1090" data-end="1150">\n<p data-start="1092" data-end="1150"
+ >Add diagrams\, screenshots\, charts\, or architecture visuals</p>\n</li>\
+ n<li data-section-id="a9i5h6" data-start="1151" data-end="1203">\n<p data-
+ start="1153" data-end="1203">Ensure the poster clearly communicates the pr
+ oject</p>\n</li>\n<li data-section-id="a9i5h6" data-start="1151" data-end=
+ "1203"><span style="color: #e62429\;">Compile the LaTeX file to generate t
+ he final poster</span></li>\n</ul>\n<p data-start="1205" data-end="1313">T
+ he template <strong data-start="1218" data-end="1249">must not be submitte
+ d as-is</strong>. You are expected to <strong data-start="1271" data-end="
+ 1295">adapt and improve it</strong> for your project.</p>\n<h4><strong>2.&
+ nbsp\;</strong><strong data-start="1320" data-end="1341">Poster Content</s
+ trong></h4>\n<p data-start="1343" data-end="1446">Your poster should commu
+ nicate the key aspects of your project. The template includes sections suc
+ h as:</p>\n<ul data-start="1448" data-end="1807">\n<li data-section-id="l3
+ c839" data-start="1448" data-end="1481">\n<p data-start="1450" data-end="1
+ 481"><strong data-start="1450" data-end="1481">Problem\, Context\, and Use
+ rs</strong></p>\n</li>\n<li data-section-id="u60yhh" data-start="1482" dat
+ a-end="1508">\n<p data-start="1484" data-end="1508"><strong data-start="14
+ 84" data-end="1508">Objectives and Scope</strong></p>\n</li>\n<li data-sec
+ tion-id="lo04cw" data-start="1509" data-end="1531">\n<p data-start="1511" 
+ data-end="1531"><strong data-start="1511" data-end="1531">Project Metadata
+ </strong></p>\n</li>\n<li data-section-id="1y4844k" data-start="1532" data
+ -end="1570">\n<p data-start="1534" data-end="1570"><strong data-start="153
+ 4" data-end="1570">Constraints and Design Decisions</strong></p>\n</li>\n<
+ li data-section-id="1tev0d8" data-start="1571" data-end="1614">\n<p data-s
+ tart="1573" data-end="1614"><strong data-start="1573" data-end="1614">Prop
+ osed Solution and System Overview</strong></p>\n</li>\n<li data-section-id
+ ="s169zn" data-start="1615" data-end="1650">\n<p data-start="1617" data-en
+ d="1650"><strong data-start="1617" data-end="1650">Methodology and Build P
+ rocess</strong></p>\n</li>\n<li data-section-id="dah6wv" data-start="1651"
+  data-end="1695">\n<p data-start="1653" data-end="1695"><strong data-start
+ ="1653" data-end="1695">Results\, Evaluation\, and Demo Evidence</strong><
+ /p>\n</li>\n<li data-section-id="13wpifn" data-start="1696" data-end="1736
+ ">\n<p data-start="1698" data-end="1736"><strong data-start="1698" data-en
+ d="1736">Impact\, Contribution\, and Learning</strong></p>\n</li>\n<li dat
+ a-section-id="1rmzbha" data-start="1737" data-end="1769">\n<p data-start="
+ 1739" data-end="1769"><strong data-start="1739" data-end="1769">Limitation
+ s and Next Steps</strong></p>\n</li>\n<li data-section-id="1wrhhpm" data-s
+ tart="1770" data-end="1807">\n<p data-start="1772" data-end="1807"><strong
+  data-start="1772" data-end="1807">References and Acknowledgements</strong
+ ></p>\n</li>\n</ul>\n<p data-start="1809" data-end="1894">You may <strong 
+ data-start="1817" data-end="1852">adjust or refine these sections</strong>
+  if needed to better present your project.</p>\n<p data-start="1896" data-
+ end="1905">Focus on:</p>\n<ul data-start="1907" data-end="1971">\n<li data
+ -section-id="9xurox" data-start="1907" data-end="1931">\n<p data-start="19
+ 09" data-end="1931"><strong data-start="1909" data-end="1931">clear explan
+ ations</strong></p>\n</li>\n<li data-section-id="1a9un6k" data-start="1932
+ " data-end="1952">\n<p data-start="1934" data-end="1952"><strong data-star
+ t="1934" data-end="1952">strong visuals</strong></p>\n</li>\n<li data-sect
+ ion-id="pom16z" data-start="1953" data-end="1971">\n<p data-start="1955" d
+ ata-end="1971"><strong data-start="1955" data-end="1971">concise text</str
+ ong></p>\n</li>\n</ul>\n<p data-start="1973" data-end="2000"><span style="
+ color: #e62429\;">Avoid large blocks of text.</span></p>\n<h4><strong>3. T
+ eam Participation</strong>:</h4>\n<ul>\n<li>Ensure that all team members c
+ ontribute to the poster presentation. Each member should be responsible fo
+ r a specific part of the demo or explanation (e.g.\, overview\, features\,
+  technical overview\, system architecture\, technical challenges\, feedbac
+ k).</li>\n<li>\n<p data-start="2360" data-end="2380">Presentation format:<
+ /p>\n<ul data-start="2382" data-end="2432">\n<li data-section-id="ao7xpu" 
+ data-start="2382" data-end="2412">\n<p data-start="2384" data-end="2412"><
+ strong data-start="2384" data-end="2412">7–10 minutes presentation</stro
+ ng></p>\n</li>\n<li data-section-id="16lei9c" data-start="2413" data-end="
+ 2432">\n<p data-start="2415" data-end="2432"><strong data-start="2415" dat
+ a-end="2432">3 minutes Q&amp\;A</strong></p>\n</li>\n</ul>\n</li>\n</ul>\n
+ <h4><strong>4. Prepare for Q&amp\;A</strong>:</h4>\n<ul>\n<li>After the de
+ mo\, be prepared to answer questions. Focus on addressing questions relate
+ d to the technical implementation\, the impact on the project\, and the fu
+ ture potential of your solution.</li>\n</ul>\n<hr>\n<h2><strong>Submission
+ </strong>:</h2>\n<ul>\n<li>Submit the compiled poster PDF and any demo mat
+ erials <strong>before the presentation.</strong></li>\n<li>Present live to
+  the class during the final session.</li>\n<li>\n<p data-start="2552" data
+ -end="2569">File name format:</p>\n<p data-start="2571" data-end="2601"><s
+ trong data-start="2571" data-end="2601">TeamName_ProjectPoster.pdf</strong
+ ></p>\n<p data-start="2603" data-end="2620">Submission rules:</p>\n<ul dat
+ a-start="2622" data-end="2742" data-is-last-node="" data-is-only-node="">\
+ n<li data-section-id="ug6zj2" data-start="2622" data-end="2651">\n<p data-
+ start="2624" data-end="2651"><strong data-start="2624" data-end="2651">One
+  submission per team</strong></p>\n</li>\n<li data-section-id="16n159r" da
+ ta-start="2652" data-end="2679">\n<p data-start="2654" data-end="2679">Sub
+ mit through <strong data-start="2669" data-end="2679">Canvas</strong></p>\
+ n</li>\n<li data-section-id="19snmvn" data-start="2680" data-end="2742" da
+ ta-is-last-node="">\n<p data-start="2682" data-end="2742" data-is-last-nod
+ e="">Late submissions follow the <strong data-start="2710" data-end="2741"
+ >standard course late policy</strong>.</p>\n</li>\n</ul>\n</li>\n</ul>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260518T170600Z
+UID:event-assignment-42066
+DTSTART;VALUE=DATE;VALUE=DATE:20260731
+CLASS:PUBLIC
+SEQUENCE:0
+SUMMARY:Financial Planning for Young Adults: Module 5: Borrowing and Credit
+  [Financial Planning for Young Adults]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2973&month=07&year=2026#assignment_42066
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260817T075100Z
+UID:event-assignment-41107
+DTSTART;VALUE=DATE;VALUE=DATE:20260731
+CLASS:PUBLIC
+DESCRIPTION:----------\nObjective:\n----------\n\nThis assignment documents
+  the final outcome of your software project and demonstrates how the work 
+ proposed earlier was implemented\, tested\, and evaluated. The report must
+  present the completed system\, evidence of implementation\, system testin
+ g\, results obtained\, and reflections on the development process. The goa
+ l of this assignment is to show that your team successfully transformed th
+ e proposed design into a working software solution.\n\nUse the official Fi
+ nal Project Report [Template] (https://docs.google.com/document/d/15Or4rLv
+ oDdwYZpPHu4i6IL19-CsZK6hM/edit?usp=sharing&ouid=106716268957962594436&rtpo
+ f=true&sd=true) as your guide when writing the report. All sections and he
+ adings provided in the template must be followed exactly.\n\n-------------
+ \nInstructions:\n-------------\n\n------------\n1. Codebase:\n------------
+ \n\n* Complete Codebase: Ensure your final project code is complete and we
+ ll-organized.\n\n* GitHub Collaboration: Submit your code via GitHub\, ens
+ uring all commits are documented and attributed to team members. The repos
+ itory should demonstrate consistent collaboration using version control\, 
+ including branches\, pull requests\, and issue tracking. Include a link to
+  the GitHub repository in your final report.\n\n* Code Comments: Your code
+  should be commented on\, explaining the purpose of key functions\, classe
+ s\, and components to make the project understandable to other developers.
+ \n\n-----------------\n2. Team Formation\n-----------------\n\n* Teams wi
+ ll remain the same as those formed for the proposal assignment.\n\n* Provi
+ de the same team name used in the proposal submission.\n\n* Assign clear r
+ oles to each team member (e.g.\, Project Manager\, Lead Developer\, UI/UX 
+ Designer\, Backend Developer\, Frontend Developer\, Database Architect\, T
+ esting Engineer).\n\n* Ensure that each team member contributes to the imp
+ lementation and development of the system.\n\n-------------------------\n3
+ .Formatting Requirements\n-------------------------\n\n*\n\n*\n\nFont: Tim
+ es New Roman\n\n*\n\nFont Size: 12 pt (main text)\, 14 pt (headings)\n\n*\
+ n\nLine Spacing: 1.5\n\n*\n\nMargins: 1 inch on all sides\n\n*\n\nTable of
+  Contents: Must be autogenerated\n\n*\n\nLists of Tables\, Figures\, and A
+ cronyms: Must be included where applicable\n\n*\n\nCitation Style: APA for
+ mat\n\n*\n\nPage Numbers: Required in footer\n\n*\n\nEach major section sh
+ ould start on a new page\n\n--------------\n4. Submission:\n--------------
+ \n\n* Submit all project documentation (PDF or Markdown files) alongside t
+ he repository.\n\n* Include a link to the GitHub repository with access pe
+ rmissions.\n\n* Demo video\n\n* Ensure all documentation is submitted befo
+ re the deadline.\n\n* Team participation sheet.  Make a copy of the team 
+ participation sheet [Link] (https://docs.google.com/spreadsheets/d/1E_TU6Y
+ zWaWctusfjszMGGZiEaLwjIUP3iyEIgMYaAXk/edit?usp=sharing) and edit the team 
+ part and add your team name. Make sure that you add each team's role and p
+ articipation. Also add team meeting and notes. Make sure that all sections
+  and well completed before submission. Each assignment should have a uniqu
+ e participation sheet.\n\nFinal Note: Any submission that does not include
+  the team sheet will receive a score of zero. This is a group assignment\;
+  however\, individual contributions will be closely monitored and assessed
+  based on coding contributions only. README files\, documentation\, or oth
+ er non-code materials will not be considered evidence of contribution. Usa
+ ge of AI and AI code generative tools in ways not specified in this guidel
+ ine will lead to serious penalties.
+SEQUENCE:0
+SUMMARY:Final Project Report [Foundations_Project]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2780&month=07&year=2026#assignment_41107
+X-ALT-DESC;FMTTYPE=text/html:<h2><strong>Objective</strong>:</h2>\n<p>This 
+ assignment documents the final outcome of your software project and demons
+ trates how the work proposed earlier was implemented\, tested\, and evalua
+ ted. The report must present the completed system\, evidence of implementa
+ tion\, system testing\, results obtained\, and reflections on the developm
+ ent process. The goal of this assignment is to show that your team success
+ fully transformed the proposed design into a working software solution.</p
+ >\n<p>Use the official Final Project Report <a class="inline_disabled" hre
+ f="https://docs.google.com/document/d/15Or4rLvoDdwYZpPHu4i6IL19-CsZK6hM/ed
+ it?usp=sharing&amp\;ouid=106716268957962594436&amp\;rtpof=true&amp\;sd=tru
+ e" target="_blank">Template</a> as your guide when writing the report. All
+  sections and headings provided in the template must be followed exactly.<
+ /p>\n<hr>\n<h2><strong>Instructions</strong>:</h2>\n<h2><strong>1. Codebas
+ e</strong>:</h2>\n<ul>\n<li><strong>Complete Codebase</strong>: Ensure you
+ r final project code is complete and well-organized.</li>\n<li><strong>Git
+ Hub Collaboration</strong>: Submit your code via GitHub\, ensuring all com
+ mits are documented and attributed to team members. The repository should 
+ demonstrate consistent collaboration using version control\, including bra
+ nches\, pull requests\, and issue tracking. Include a link to the GitHub r
+ epository in your final report.</li>\n<li><strong>Code Comments</strong>: 
+ Your code should be commented on\, explaining the purpose of key functions
+ \, classes\, and components to make the project understandable to other de
+ velopers.</li>\n</ul>\n<h2><strong>2.&nbsp\;Team Formation</strong></h2>\n
+ <ul>\n<li data-start="741" data-end="812">Teams will remain the same as th
+ ose formed for the proposal assignment.</li>\n<li data-start="814" data-en
+ d="873">Provide the same team name used in the proposal submission.</li>\n
+ <li data-start="875" data-end="1047">Assign clear roles to each team membe
+ r (e.g.\, Project Manager\, Lead Developer\, UI/UX Designer\, Backend Deve
+ loper\, Frontend Developer\, Database Architect\, Testing Engineer).</li>\
+ n<li data-start="1049" data-end="1142">Ensure that each team member contri
+ butes to the implementation and development of the system.</li>\n</ul>\n<h
+ 2><strong>3.</strong><strong>Formatting Requirements</strong></h2>\n<ul st
+ yle="list-style-type: circle\;">\n<li style="list-style-type: none\;">\n<u
+ l style="list-style-type: circle\;">\n<li>\n<p><strong>Font:</strong> Time
+ s New Roman</p>\n</li>\n<li>\n<p><strong>Font Size:</strong> 12 pt (main t
+ ext)\, 14 pt (headings)</p>\n</li>\n<li>\n<p><strong>Line Spacing:</strong
+ > 1.5</p>\n</li>\n<li>\n<p><strong>Margins:</strong> 1 inch on all sides</
+ p>\n</li>\n<li>\n<p><strong>Table of Contents:</strong> Must be <span styl
+ e="color: #e62429\;">autogenerated</span></p>\n</li>\n<li>\n<p><strong>Lis
+ ts of Tables\, Figures\, and Acronyms:</strong> Must be included where app
+ licable</p>\n</li>\n<li>\n<p><strong>Citation Style:</strong> <strong>APA 
+ format</strong></p>\n</li>\n<li>\n<p><strong>Page Numbers:</strong> Requir
+ ed in footer</p>\n</li>\n<li>\n<p>Each major section should start on a <sp
+ an style="color: #e62429\;">new page</span></p>\n</li>\n</ul>\n</li>\n</ul
+ >\n<h2><strong>4. Submission</strong>:</h2>\n<ul>\n<li>Submit all project 
+ documentation (PDF or Markdown files) alongside the repository.\n<ul>\n<li
+ >Include a link to the GitHub repository with access permissions.</li>\n<l
+ i>Demo video</li>\n</ul>\n</li>\n<li>Ensure all documentation is submitted
+  before the deadline.</li>\n<li><strong>Team participation sheet.&nbsp\; <
+ /strong>Make a copy of the team participation sheet <a class="inline_disab
+ led" href="https://docs.google.com/spreadsheets/d/1E_TU6YzWaWctusfjszMGGZi
+ EaLwjIUP3iyEIgMYaAXk/edit?usp=sharing" target="_blank">Link</a> and edit t
+ he team part and add your team name. Make sure that you add each team's ro
+ le and participation. Also add team meeting and notes. Make sure that all 
+ sections and well completed before submission. Each assignment should have
+  a unique participation sheet.</li>\n</ul>\n<p><span style="color: #e62429
+ \;"><strong>Final Note:</strong></span> Any submission that does not inclu
+ de the team sheet will receive a score of zero. This is a group assignment
+ \; however\, individual contributions will be closely monitored and assess
+ ed based on coding contributions only. README files\, documentation\, or o
+ ther non-code materials will not be considered evidence of contribution. U
+ sage of AI and AI code generative tools in ways not specified in this guid
+ eline will lead to serious penalties.</p>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260819T132300Z
+UID:event-assignment-41927
+DTSTART;VALUE=DATE;VALUE=DATE:20260731
+CLASS:PUBLIC
+DESCRIPTION:Throughout your learning journey\, you have been working on dev
+ eloping mission statements and exploring how your ideas can contribute to 
+ transforming African communities. However\, a community is a puzzle\; ea
+ ch mission is one piece of that puzzle. When combined\, your missions can 
+ create a more complete and sustainable vision for change.\n\nThis assignme
+ nt is designed to help you connect your individual missions\, collaborate 
+ as a team\, and practise storytelling as a tool for impact.\n\n \n\nAssig
+ nment Structure\n--------------------\n\n1. Intro Discussion (Mission Shar
+ ing): The beginning of it all! \n----------------------------------------
+ ------------------------\n\nEach member will share their mission statement
+  with the group. \n\nThe goal of this stage is to listen\, understand\, a
+ nd identify connections between your different missions.\n\nGuiding questi
+ ons \n\n* What elements of your mission have you already started working 
+ on?\n\n* What is the specific community you are engaging with?\n\n* What c
+ hanges do you hope to achieve in that community?\n\nNote: Remember to reco
+ rd your conversation in the [team task sheet.] (https://docs.google.com/sp
+ readsheets/d/18VwVRsBEMcK0Pom9XZO_NPVsnZknHXHsfyDKVUTpOZ0/edit?usp=sharing
+ ) Also\, prepare to work on your next discussion. Book office hours with y
+ our learning coach\, and remember this will count towards your final grade
+ !\n\n2. Follow-Up Conversation (Collaboration & Integration)\n------------
+ -------------------------------------------\n\nThis part of the discussion
+  should help you think about partnership\, interdependence\, and shared go
+ als. Also\, remember that your goal is to ensure that there is growth in t
+ he community. The fact that your mission is a success means that it contri
+ butes to the success of another mission. Remember to consider that you are
+  from different communities but still within Africa.\n\nGuiding questions:
+ \n\n* What new lessons\, challenges\, or opportunities have you discovered
+  in your mission that could be valuable for the whole group?\n\n* In what 
+ ways can these lessons help strengthen or expand the impact of the communi
+ ty you are serving?\n\n* If you were all working within the same community
+ \, how could your missions complement one another?\n\nNote: Remember to re
+ cord your conversation in the [team task sheet] (https://docs.google.com/s
+ preadsheets/d/18VwVRsBEMcK0Pom9XZO_NPVsnZknHXHsfyDKVUTpOZ0/edit?usp=sharin
+ g). Also\, prepare to work on your next discussion. Book office hours with
+  your learning coach\, and remember this will count towards your final gra
+ de! \n\n \n\n3. Closing Discussion (Storytelling & Pitch)\n-------------
+ -------------------------------\n\nBreak the talk into acts or segments th
+ at flow:\n\nAct 1 – Setting the Stage (Speaker 1): One student introduce
+ s the shared challenge or problem in a story-driven way. They pose the cen
+ tral question\, like\, what if our communities could be self-sufficient?\n
+ \nAct 2 – Mission Stories (Speaker 2): The second person shares their pe
+ rsonal mission and story\, tying it back to the bigger theme.\n\nAct 3 –
+  Integration & Call-to-Action (Speaker 3): The final person shows how the 
+ missions connect and closes with a powerful vision for the future. It's a 
+ three-act talk\, but the challenge is for the students to deliver it as a 
+ unified TEDx Talk by three storytellers and delivered as one story.\n\nNot
+ e: Remember to record your conversation in the team task sheet. Also\, pre
+ pare to work on your next discussion. Book office hours with your learning
+  coach\, and remember this will count towards your final grade!\n\n \n\nD
+ eliverables \n\n1. Submit an outline/plot map of your talk on Canvas\n\n2
+ . A complete team task sheet on Canvas\n\n3. Prepare to deliver your talk 
+ in a TEDx style! (Each group has 7 minutes to present). You are encouraged
+  to use visual aids in your delivery. \n\nYour team will be graded on:\n\
+ n* Storytelling Quality: How clearly and powerfully do you communicate you
+ r shared vision?\n\n* Audience Engagement: Do you capture and hold attenti
+ on through creativity\, voice\, and visuals?\n\n* Collaboration: Does your
+  story reflect the integration of all group members’ missions?\n\n* Stor
+ y delivery\n\n* Use VISUAL AIDS where necessary. \n\nRemember: This assig
+ nment is not just about your individual mission. It’s about learning to 
+ collaborate\, integrate\, and communicate in a way that mirrors how real c
+ hange happens in African communities.
+SEQUENCE:0
+SUMMARY:Summative: Mission Statements & Community Change [Communicating_for
+ _Impact]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2818&month=07&year=2026#assignment_41927
+X-ALT-DESC;FMTTYPE=text/html:<p><span>Throughout your learning journey\, yo
+ u have been working on developing </span><strong>mission statements</stron
+ g><span> and exploring how your ideas can contribute to </span><strong>tra
+ nsforming African communities</strong><span>.&nbsp\;</span><span>However\,
+  a </span><strong>community is a puzzle\;</strong><span>&nbsp\;each missio
+ n is one piece of that puzzle. When combined\, your missions can create a 
+ more complete and sustainable vision for change.</span></p>\n<p><span>This
+  assignment is designed to help you connect your individual missions\, col
+ laborate as a team\, and practise </span><strong>storytelling as a tool fo
+ r impact</strong><span>.</span></p>\n<p>&nbsp\;</p>\n<h3><strong>Assignmen
+ t Structure</strong></h3>\n<h4><strong>1. Intro Discussion (Mission Sharin
+ g): The beginning of it all!&nbsp\;</strong></h4>\n<p><span>Each member wi
+ ll share their </span><strong>mission statement</strong><span> with the gr
+ oup.&nbsp\;</span></p>\n<p><span>The goal of this stage is to </span><stro
+ ng>listen\, understand\, and identify connections</strong><span> between y
+ our different missions.</span><span><br><br></span></p>\n<p><strong>Guidin
+ g questions&nbsp\;</strong></p>\n<ul>\n<li aria-level="2"><span>What eleme
+ nts of your mission have you already started working on?</span><span><br><
+ br></span></li>\n<li aria-level="2"><span>What is the specific </span><str
+ ong>community</strong><span> you are engaging with?</span><span><br><br></
+ span></li>\n<li aria-level="2"><span>What changes do you hope to achieve i
+ n that community?</span></li>\n</ul>\n<p><strong><i>Note: Remember to reco
+ rd your conversation in the <span style="color: #e62429\;"><a class="inlin
+ e_disabled" style="color: #e62429\;" href="https://docs.google.com/spreads
+ heets/d/18VwVRsBEMcK0Pom9XZO_NPVsnZknHXHsfyDKVUTpOZ0/edit?usp=sharing" tar
+ get="_blank">team task sheet.</a></span> Also\, prepare to work on your ne
+ xt discussion. Book office hours with your learning coach\, and remember t
+ his will count towards your final grade! </i></strong><strong><i><br><br><
+ /i></strong></p>\n<h4><strong>2. Follow-Up Conversation (Collaboration &am
+ p\; Integration)</strong></h4>\n<p><span>This part of the discussion shoul
+ d help you think about </span><strong>partnership\, interdependence\, and 
+ shared goals</strong><span>. Also\, remember that your goal is to ensure t
+ hat there is growth in the community. The fact that your mission is a succ
+ ess means that it contributes to the success of another mission. Remember 
+ to consider that you are from different communities but still within Afric
+ a. </span><span><br><br></span></p>\n<p><strong><i>Guiding questions: </i>
+ </strong><span><br><br></span></p>\n<ul>\n<li aria-level="2"><span>What </
+ span><strong>new lessons\, challenges\, or opportunities</strong><span> ha
+ ve you discovered in your mission that could be valuable for the whole gro
+ up?</span></li>\n<li aria-level="2"><span>In what ways can </span><strong>
+ these lessons help strengthen</strong><span> or expand the impact of the c
+ ommunity you are serving?</span></li>\n<li aria-level="2"><span>If you wer
+ e all working within the same community\, how could your </span><strong>mi
+ ssions complement one another</strong><span>?</span></li>\n</ul>\n<p><stro
+ ng><i>Note: Remember to record your conversation in the <span style="color
+ : #e62429\;"><a class="inline_disabled" style="color: #e62429\;" href="htt
+ ps://docs.google.com/spreadsheets/d/18VwVRsBEMcK0Pom9XZO_NPVsnZknHXHsfyDKV
+ UTpOZ0/edit?usp=sharing" target="_blank">team task sheet</a></span>. Also\
+ , prepare to work on your next discussion. Book office hours with your lea
+ rning coach\, and remember this will count towards your final grade!&nbsp\
+ ;</i></strong></p>\n<p><span>&nbsp\;</span></p>\n<h4><strong>3. Closing Di
+ scussion (Storytelling &amp\; Pitch)</strong></h4>\n<p><strong>Break the t
+ alk into acts or segments that flow:</strong></p>\n<p><strong>Act 1</stron
+ g><span> – Setting the Stage (Speaker 1): One student introduces the sha
+ red challenge or problem in a story-driven way. They pose the central ques
+ tion\, like\, what if our communities could be self-sufficient?</span></p>
+ \n<p><strong>Act 2 </strong><span>– Mission Stories (Speaker 2): The sec
+ ond person shares their personal mission and story\, tying it back to the 
+ bigger theme.</span></p>\n<p><strong>Act 3 </strong><span>– Integration 
+ &amp\; Call-to-Action (Speaker 3): The final person shows how the missions
+  connect and closes with a powerful vision for the future. It's a three-ac
+ t talk\, but the challenge is for the students to deliver it as a unified 
+ TEDx Talk by three storytellers and delivered as one story.</span></p>\n<p
+ ><strong><i>Note: Remember to record your conversation in the team task sh
+ eet. Also\, prepare to work on your next discussion. Book office hours wit
+ h your learning coach\, and remember this will count towards your final gr
+ ade!</i></strong></p>\n<p><strong><i></i></strong></p>\n<p><strong><i></i>
+ </strong></p>\n<p>&nbsp\;</p>\n<p><strong>Deliverables&nbsp\;</strong></p>
+ \n<p>1. Submit an outline/plot map of your talk on Canvas</p>\n<p>2. A com
+ plete team task sheet on Canvas</p>\n<p>3. Prepare to deliver your talk in
+  a TEDx style! (Each group has 7 minutes to present). You are encouraged t
+ o use visual aids in your delivery.&nbsp\;</p>\n<p><strong><i></i></strong
+ ></p>\n<p><strong>Your team will be graded on:</strong></p>\n<ol>\n<li ari
+ a-level="1"><strong>Storytelling Quality:</strong><span> How clearly and p
+ owerfully do you communicate your shared vision?</span><span><br><br></spa
+ n></li>\n<li aria-level="1"><strong>Audience Engagement</strong><span>: Do
+  you capture and hold attention through creativity\, voice\, and visuals?<
+ /span><span><br><br></span></li>\n<li aria-level="1"><strong>Collaboration
+ </strong><span>: Does your story reflect the integration of all group memb
+ ers’ missions?</span></li>\n<li aria-level="1"><strong>Story delivery</s
+ trong><strong></strong><strong></strong></li>\n<li aria-level="1"><strong>
+ Use VISUAL AIDS where necessary.&nbsp\;</strong></li>\n</ol>\n<p><span>Rem
+ ember: This assignment is not just about your individual mission. It’s a
+ bout learning to </span><strong>collaborate\, integrate\, and communicate<
+ /strong><span> in a way that mirrors how real change happens in African co
+ mmunities.</span></p>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260518T170700Z
+UID:event-assignment-42067
+DTSTART;VALUE=DATE;VALUE=DATE:20260816
+CLASS:PUBLIC
+SEQUENCE:0
+SUMMARY:Financial Planning for Young Adults: Module 6 Investing [Financial 
+ Planning for Young Adults]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2973&month=08&year=2026#assignment_42067
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260518T170700Z
+UID:event-assignment-42068
+DTSTART;VALUE=DATE;VALUE=DATE:20260831
+CLASS:PUBLIC
+SEQUENCE:0
+SUMMARY:Financial Planning for Young Adults: Risk Management Quiz [Financia
+ l Planning for Young Adults]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2973&month=08&year=2026#assignment_42068
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260728T091500Z
+UID:event-assignment-42189
+DTSTART;VALUE=DATE;VALUE=DATE:20260831
+CLASS:PUBLIC
+DESCRIPTION:
+SEQUENCE:0
+SUMMARY:Well Being & Self Care: for Physical and Mental Health [WELL BEING 
+ & SELF CARE]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2972&month=08&year=2026#assignment_42189
+X-ALT-DESC;FMTTYPE=text/html:
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260518T170900Z
+UID:event-assignment-override-9100
+DTSTART;VALUE=DATE;VALUE=DATE:20260904
+CLASS:PUBLIC
+DESCRIPTION:
+SEQUENCE:0
+SUMMARY:Certificate Submission (May 2026_January 2023) [Financial Planning 
+ for Young Adults]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2973&month=09&year=2026#assignment_42074
+X-ALT-DESC;FMTTYPE=text/html:
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260603T151900Z
+UID:event-assignment-42061
+DTSTART;VALUE=DATE;VALUE=DATE:20260910
+CLASS:PUBLIC
+DESCRIPTION:
+SEQUENCE:0
+SUMMARY:Financial Planning for Young Adults [Financial Planning for Young A
+ dults]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2973&month=09&year=2026#assignment_42061
+X-ALT-DESC;FMTTYPE=text/html:
+END:VEVENT
+END:VCALENDAR

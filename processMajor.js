@@ -2,6 +2,8 @@ const {
     fetchCanvasEvents
 } = require('./services/canvas');
 
+const fs = require('node:fs/promises');
+
 const {
     loadState,
     saveState,
@@ -37,7 +39,7 @@ async function processMajor(major, hour, today, day) {
 
     console.log("Fetching Canvas feed...");
 
-    const assignments = await fetchCanvasEvents(major.feed);
+    const assignments = await fetchCanvasEvents(major.feed, major.backupfile);
 
     console.log("Canvas fetched");
 

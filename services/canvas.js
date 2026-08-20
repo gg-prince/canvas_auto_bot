@@ -4,7 +4,7 @@ const fs = require('node:fs/promises');
 /*
  * Fetch assignments from Canvas Calendar Feed.
  */
-async function fetchCanvasEvents(url) {
+async function fetchCanvasEvents(url, backupFilePath) {
 
     let events;
 
@@ -16,11 +16,11 @@ async function fetchCanvasEvents(url) {
 
     }catch (error){
 
-	console.log("Live canvas not found. Trying local file!");
+	console.log(`Live canvas not found. Trying local file at: ${backupFilePath}...\n`);
 
 	try {
     
-	   const rawFileData = await fs.readFile('canvas-backup.ics', 'utf-8');
+	   const rawFileData = await fs.readFile(backupFilePath, 'utf-8');
 	   events = ical.parseICS(rawFileData);
 
 	   console.log("Found local file, and now processing!");

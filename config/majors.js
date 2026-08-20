@@ -9,6 +9,8 @@ module.exports = [
 
         feed: process.env.CANVAS_FEED,
 
+	backupfile: '../backupfile/bckup.ics',
+
         group: process.env.GROUP_NAME,
 
         daysAhead: 7,
@@ -25,6 +27,8 @@ module.exports = [
         name: 'BEL January 2026',
 
         feed: process.env.CANVAS_FEED_BEL,
+
+	backupfile: '../backupfile/bel_j26.ics',
 
         group: process.env.GROUP_NAME_BEL,
 
@@ -43,6 +47,8 @@ module.exports = [
 
         feed: process.env.CANVAS_FEED_BEL_M25,
 
+	backupfile: '../backupfile/bel_m25.ics',
+
         group: process.env.GROUP_NAME_BEL_M25,
 
         daysAhead: 7,
@@ -60,6 +66,8 @@ module.exports = [
 
         feed: process.env.CANVAS_FEED_BSE_M25,
 
+	backupfile: '../backupfile/bse_m26.ics',
+
         group: process.env.GROUP_NAME_BSE_M25,
 
         daysAhead: 7,
@@ -76,6 +84,8 @@ module.exports = [
         name: 'BSE September 2025',
 
         feed: process.env.CANVAS_FEED_BSE_S25,
+
+	backupfile: '../backupfile/bse_s26.ics',
 
         group: process.env.GROUP_NAME_BSE_S25,
 
