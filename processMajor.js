@@ -29,15 +29,17 @@ async function processMajor(major, hour, today, day) {
 
     let state = loadState(major.id);
 
-    if (state.date !== today) {
+    if (state.date != today) {
 
-        state = resetState(today);
-
-        saveState(major.id, state);
+        state = resetState(major.id, today);
 
     }
 
+    console.log("Fetching Canvas feed...");
+
     const assignments = await fetchCanvasEvents(major.feed);
+
+    console.log("Canvas fetched");
 
     const { dueToday, dueSoon } = organizeAssignments(assignments, major.daysAhead, major.morningPromotionHour);
 
@@ -49,13 +51,13 @@ async function processMajor(major, hour, today, day) {
 
         const type2 = formatType2(dueToday);
 
-        if (type1 && !state.sentType1 && day.day % major.type1Frequency === 0) {
+        if (type1 && !state.sentType1 && day.day % major.type1Frequency === 0 && day.day != 6) {
 
             await sendMessage(major.group, type1);
 
-        }
+            state.sentType1 = true;
 
-        state.sentType1 = true;
+	}
 
         if (type2 && !state.sentType2) {
 

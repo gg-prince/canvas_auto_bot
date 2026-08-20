@@ -1,12 +1,10 @@
 function isDueToday(dueDate) {
 
     const today = new Date();
-    today.setHours(0, 0, 0, 0);
 
     const due = new Date(dueDate);
-    due.setHours(0, 0, 0, 0);
 
-    return due === today;
+    return due.setHours(0, 0, 0, 0) === today.setHours(0, 0, 0, 0);
 
 }
 
