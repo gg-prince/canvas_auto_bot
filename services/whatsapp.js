@@ -41,9 +41,12 @@ async function initializeWhatsapp() {
             console.log('Authenticated');
         });
 
-        client.on('ready', () => {
+        client.on('ready', async () => {
+
+	    await new Promise(resolve => setTimeout(resolve, 10000));
             console.log('WhatsApp ready and analyzing...');
             resolve();
+
         });
 
         client.on('auth_failure', (msg) => {
@@ -65,6 +68,8 @@ async function initializeWhatsapp() {
  */
 async function sendMessage(groupName, message) {
 
+  try{
+
     const chats = await client.getChats();
 
     const group = chats.find(
@@ -74,12 +79,19 @@ async function sendMessage(groupName, message) {
     );
 
     if (!group) {
-        throw new Error(
-            `Group "${groupName}" not found`
-        );
+
+        throw new Error(`Group "${groupName}" not found`);
+
     }
 
     await group.sendMessage(message);
+
+  } catch(err){
+
+     console.error(err);
+
+  }
+
 }
 
 module.exports = {

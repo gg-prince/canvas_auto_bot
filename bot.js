@@ -25,9 +25,7 @@ const {
 
     let day = loadDay();
 
-    if (!day.date !== today) {
-
-        day.day++;
+    if (day.date != today) {
 
         day.date = today;
 
@@ -37,7 +35,9 @@ const {
 
             day.week++;
 
-        }
+        }else{
+            day.day++;
+	}
 
         saveDay(day);
 

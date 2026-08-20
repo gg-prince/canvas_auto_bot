@@ -1,5 +1,5 @@
 const fs = require('fs');
-const path = require('path');
+const path = require('path')
 
 const STATE_FILE = path.join(__dirname, '../data/state.json');
 const DAY_FILE = path.join(__dirname, '../data/day.json');

@@ -29,9 +29,14 @@ function formatType1(assignments) {
         return null;
     }
 
-    const lines = assignments.map(a =>
-        `• ${a.title}\n  *Due: ${Math.ceil((new Date(a.dueDate) - new Date()) / (1000 * 60 * 60 * 24))} day(s)*`
-    );
+    const lines = assignments.map(a => {
+
+	let day = Math.round((new Date(a.dueDate).setHours(0,0,0,0) - new Date().setHours(0,0,0,0)) / 86400000);
+	
+	let s = day > 1 ? "s" : "";
+
+    return `• ${a.title}\n  *Due: ${day} day${s}*`;
+});
 
     return (
         '📚 *DUE IN A WEEK*\n\n' +
@@ -46,8 +51,10 @@ function formatType2(assignments) {
         return null;
     }
 
+    let s = assignments.length > 1 ? "S" : "";
+
     return (
-        '⚠️ *ASSIGNMENTS DUE TODAY*\n\n' +
+        `⚠️ *(${assignments.length}) ASSIGNMENT${s} DUE TODAY*\n\n` +
         buildDeadlineList(assignments).join('\n\n')
     );
 
@@ -73,7 +80,7 @@ function formatType4(assignments) {
     }
 
     return (
-        '🚨🚨🚨 *MAKE SURE YOU SUBMITTED*\n\n' +
+        '🚨🚨 *MAKE SURE YOU SUBMITTED*\n\n' +
         buildDeadlineList(assignments).join('\n\n')
     );
 
