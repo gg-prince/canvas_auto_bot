@@ -47,6 +47,8 @@ async function processMajor(major, hour, today, day) {
 
     const announcedAssignmentPush = !state.sentType1;
 
+    console.log("Processing messages...");
+
     if (hour >= 7 && (!state.sentType1 || !state.sentType2)) {
 
         const type1 = formatType1(dueSoon);
@@ -59,6 +61,8 @@ async function processMajor(major, hour, today, day) {
 
             state.sentType1 = true;
 
+	    console.log("\tSent type 1!");
+
 	}
 
         if (type2 && !state.sentType2) {
@@ -66,6 +70,8 @@ async function processMajor(major, hour, today, day) {
             await sendMessage(major.group, type2);
 
             state.sentType2 = true;
+
+	    console.log("\tSent type 2!");
 
         }
 
@@ -80,6 +86,8 @@ async function processMajor(major, hour, today, day) {
             await sendMessage(major.group, type3);
 
             state.sentType3 = true;
+
+	    console.log("\tSent type 3!");
 
         }
 
@@ -96,9 +104,14 @@ async function processMajor(major, hour, today, day) {
 
             state.sentType4 = true;
 
+	    console.log("\tSent type 4!");
+
         }
 
     }
+
+
+    console.log("Finished the messaging part!");
 
 
     if (announcedAssignmentPush) {

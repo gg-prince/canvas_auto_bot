@@ -29,14 +29,16 @@ function formatType1(assignments) {
         return null;
     }
 
+    console.log("\tCreating type 1...");
+
     const lines = assignments.map(a => {
 
 	let day = Math.round((new Date(a.dueDate).setHours(0,0,0,0) - new Date().setHours(0,0,0,0)) / 86400000);
 	
 	let s = day > 1 ? "s" : "";
 
-    return `• ${a.title}\n  *Due: ${day} day${s}*`;
-});
+        return `• ${a.title}\n  *Due: ${day} day${s}*`;
+    });
 
     return (
         '📚 *DUE IN A WEEK*\n\n' +
@@ -50,6 +52,8 @@ function formatType2(assignments) {
     if (assignments.length === 0) {
         return null;
     }
+
+    console.log("\tCreating type 2...");
 
     let s = assignments.length > 1 ? "S" : "";
 
@@ -66,6 +70,8 @@ function formatType3(assignments) {
         return null;
     }
 
+    console.log("\tCreating type 3...");
+
     return (
         '🚨 *A FEW HOURS REMAINING*\n\n' +
         buildDeadlineList(assignments).join('\n\n')
@@ -78,6 +84,8 @@ function formatType4(assignments) {
     if (assignments.length === 0) {
         return null;
     }
+
+    console.log("\tCreating type 4...");
 
     return (
         '🚨🚨 *MAKE SURE YOU SUBMITTED*\n\n' +

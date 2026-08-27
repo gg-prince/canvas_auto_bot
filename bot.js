@@ -47,11 +47,13 @@ const {
 
     for (const major of majors) {
 
-        console.log(`Processing ${major.name}...`);
+        console.log(`\nProcessing ${major.name}...`);
 
         await processMajor(major, hour, today, day);
 
-	console.log(`Done✅`);
+	console.log(`Done✅\n`);
+
+	console.log(`------------------------------`);
 
     }
 
