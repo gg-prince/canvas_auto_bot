@@ -7,7 +7,7 @@ let client;
  * Start WhatsApp.
  */
 
-console.log('Initializing WhatsApp...');
+console.log('Opening WhatsApp...');
 
 async function initializeWhatsapp() {
 

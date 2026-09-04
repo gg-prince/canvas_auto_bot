@@ -17,8 +17,8 @@ function formatDeadlineTime(dueDate) {
 
 function buildDeadlineList(assignments) {
 
-    return assignments.map(a =>
-        `• ${a.title}\n  *⏰${formatDeadlineTime(a.dueDate)}⏰*`
+    return assignments.map((a, index) =>
+        `*${index + 1}.* ${a.title}\n  *⏰${formatDeadlineTime(a.dueDate)}⏰*`
     );
 
 }
@@ -31,13 +31,13 @@ function formatType1(assignments) {
 
     console.log("\tCreating type 1...");
 
-    const lines = assignments.map(a => {
+    const lines = assignments.map((a, index) => {
 
 	let day = Math.round((new Date(a.dueDate).setHours(0,0,0,0) - new Date().setHours(0,0,0,0)) / 86400000);
 	
 	let s = day > 1 ? "s" : "";
 
-        return `• ${a.title}\n  *Due: ${day} day${s}*`;
+        return `*${index + 1}.* ${a.title}\n  *Due: ${day} day${s}*`;
     });
 
     return (
