@@ -1,123 +1,398 @@
-# Canvas Auto Bot
+# Canvas WhatsApp Bot
 
-A Node.js bot that watches Canvas LMS calendar feeds for multiple course cohorts and posts assignment deadline reminders straight into WhatsApp group chats — no manual checking required.
+A Node.js bot that fetches assignments from Canvas and sends automated deadline reminders to students through WhatsApp.
 
-It runs on a schedule (morning, midday, evening), tracks what it's already announced so it never spams the same reminder twice in a day, and gracefully falls back to a local backup calendar file if the live Canvas feed is unreachable.
+The bot is designed to support multiple majors and intakes from a single configuration, making it possible to expand the system without duplicating the bot logic.
 
-## How it works
+## Features
 
-1. **Fetch** — for each configured cohort ("major"), the bot pulls the Canvas calendar feed (an `.ics` URL) using `node-ical`. If the live feed fails, it falls back to a static backup `.ics` file stored in `backupfiles/`.
-2. **Organize** — assignments are split into "due today" and "due soon" (within a configurable number of days ahead). Canvas represents end-of-day deadlines as `00:00`, which the bot treats as `23:00` so they don't look like they're due at midnight. Assignments due tomorrow are promoted into "due today" once a configured morning hour has passed, so they show up as more urgent as the deadline approaches.
-3. **Message** — depending on the time of day and what's already been sent for that cohort today, the bot sends one of four WhatsApp message types to that cohort's group chat:
-   - 📚 **Due in a week** — a heads-up digest, sent in the morning, only on days matching a configurable frequency (e.g. every 2 days)
-   - ⚠️ **Due today** — sent once in the morning
-   - 🚨 **A few hours remaining** — sent from midday onward
-   - 🚨🚨 **Make sure you submitted** — a final evening check-in
-4. **Track state** — what's been sent for each cohort each day is persisted to `data/state.json`, and a running day/week counter used for message frequency is kept in `data/day.json`. This is what prevents duplicate reminders if the bot runs more than once on the same day.
-5. **Repeat** — this whole cycle is designed to run three times a day via a systemd timer (see below), not to run continuously.
+* Fetches assignments directly from Canvas iCal feeds.
+* Supports multiple majors/intakes from one configuration.
+* Sends scheduled assignment reminders through WhatsApp.
+* Maintains daily state to prevent duplicate processing.
+* Automatically uses local Canvas backup files when a live Canvas feed is unavailable.
+* Automatically refreshes Canvas backup files every Sunday.
+* Safely replaces individual backup files only when their new feed has been successfully downloaded and parsed.
+* Preserves the previous backup when a specific Canvas feed fails.
+* Runs continuously through the Linux system scheduler.
 
-## Requirements
+## Project Structure
 
-- Node.js
-- Chromium installed at `/usr/bin/chromium` (used headlessly by [`whatsapp-web.js`](https://github.com/pedroslopez/whatsapp-web.js) via Puppeteer to drive a real WhatsApp Web session)
-- A WhatsApp account to pair as the sending account (you'll scan a QR code once; the session is cached locally afterward)
-- One or more Canvas calendar feed URLs (from your Canvas account's calendar settings)
-- A WhatsApp group chat per cohort that the paired account is already a member of
+```text
+canvas-bot/
+├── backupfiles/
+│   ├── bel_j26.ics
+│   ├── bel_m25.ics
+│   ├── bse_m25.ics
+│   └── bse_s25.ics
+│
+├── bot.js
+├── canvas.js
+├── whatsapp.js
+├── state.js
+├── message.js
+├── backup-refresh.js
+├── package.json
+├── .env
+└── ...
+```
 
-## Setup
+## How It Works
 
-1. Clone the repo and install dependencies:
-   ```bash
-   git clone https://github.com/gg-prince/canvas_auto_bot.git
-   cd canvas_auto_bot
-   npm install
-   ```
-2. Create a `.env` file in the project root with the feed URL and group name for each cohort you want to track. Based on the current cohorts configured in `config/majors.js`:
-   ```env
-   CANVAS_FEED=your_canvas_ics_feed_url
-   GROUP_NAME=your_whatsapp_group_name
+The bot follows this general flow:
 
-   CANVAS_FEED_BEL=...
-   GROUP_NAME_BEL=...
+```text
+Start bot
+   │
+   ▼
+Check daily state
+   │
+   ▼
+Is this a new day?
+   │
+   ├── No ────────────────┐
+   │                      │
+   └── Yes                │
+        │                 │
+        ▼                 │
+   Update day state       │
+        │                 │
+        ▼                 │
+   Is it Sunday?          │
+        │                 │
+       Yes                │
+        │                 │
+        ▼                 │
+   Refresh Canvas         │
+   backup files           │
+        │                 │
+        └────────┬────────┘
+                 ▼
+        Process each major
+                 │
+                 ▼
+          Fetch Canvas feed
+                 │
+          ┌──────┴──────┐
+          │             │
+       Success       Failure
+          │             │
+          ▼             ▼
+     Use live feed   Use local
+                     backup file
+          │             │
+          └──────┬──────┘
+                 ▼
+          Process assignments
+                 │
+                 ▼
+          Send WhatsApp reminders
+```
 
-   CANVAS_FEED_BEL_M25=...
-   GROUP_NAME_BEL_M25=...
+## Canvas Feed
 
-   CANVAS_FEED_BSE_M25=...
-   GROUP_NAME_BSE_M25=...
+Each major/intake is configured with:
 
-   CANVAS_FEED_BSE_S25=...
-   GROUP_NAME_BSE_S25=...
-   ```
-   `GROUP_NAME*` must match the exact name of an existing WhatsApp group the paired account is already in — the bot looks it up by name, it doesn't create groups.
-3. First run: start the bot manually and scan the QR code it prints in the terminal with WhatsApp (Linked Devices → Link a Device):
-   ```bash
-   node bot.js
-   ```
-   Once authenticated, the session is cached locally (see `.gitignore` — `.wwebjs_auth/`) so you won't need to re-scan on every run.
+* A Canvas iCal feed URL.
+* A corresponding local backup file.
+* A unique ID used by the bot for state management.
 
-## Adding or editing cohorts
+Example:
 
-Cohorts ("majors") are defined in `config/majors.js`. Each entry needs:
+```js
+{
+    id: 'bse_m25',
+    feed: process.env.BSE_M25_FEED,
+    backupfile: 'backupfiles/bse_m25.ics'
+}
+```
 
-| Field | Meaning |
-|---|---|
-| `id` | Unique internal identifier, used as the key for saved state |
-| `name` | Human-readable label, shown in console logs |
-| `feed` | Canvas `.ics` calendar feed URL (from an env var) |
-| `backupfile` | Path to a static `.ics` fallback file, used if the live feed fails |
-| `group` | Exact WhatsApp group name to post reminders into |
-| `daysAhead` | How many days out counts as "due soon" |
-| `type1Frequency` | Send the "due in a week" digest every N days |
-| `morningPromotionHour` | Hour after which a next-day deadline gets escalated to "due today" |
+This configuration is shared by both the normal Canvas fetching process and the backup-refresh process.
 
-## Running on a schedule
+## Canvas Backup System
 
-The bot is a one-shot script, not a long-running server — it's meant to be triggered on a timer, not left running. Systemd unit files are included for this:
+The bot maintains local `.ics` files so that assignment processing can continue when a live Canvas feed is temporarily unavailable.
 
-- **`canvas-bot.service`** — runs `node bot.js` once, from the project's working directory
-- **`canvas-bot.timer`** — triggers the service three times a day, at 06:58, 11:58, and 17:58
+For example:
 
-To install them on Linux:
+```text
+Canvas BSE M25 feed
+        │
+        ▼
+backupfiles/bse_m25.ics
+```
+
+During normal operation, the bot always attempts to use the live Canvas feed first.
+
+If the live feed cannot be reached, the bot reads the corresponding local backup:
+
+```text
+Live Canvas
+     │
+     ├── Available ──► Process live feed
+     │
+     └── Unavailable ─► Process local backup
+```
+
+### Automatic Sunday Refresh
+
+The backup files are automatically refreshed when the bot detects the first new day of Sunday.
+
+The bot already maintains the current date and day in its state. When the date changes:
+
+```js
+if (day.date != today) {
+
+    day.date = today;
+
+    if (day.day == 6) {
+
+        day.day = 0;
+        day.week++;
+
+        await refreshBackups(majors);
+
+    } else {
+
+        day.day++;
+
+    }
+
+    saveDay(day);
+}
+```
+
+Therefore, the backup refresh does not require a separate cron job or timer.
+
+The Sunday process is:
+
+```text
+First bot run on Sunday
+        │
+        ▼
+Download each Canvas feed
+        │
+        ▼
+Parse and validate feed
+        │
+        ├── Valid ──────► Replace that backup
+        │
+        └── Invalid ────► Keep existing backup
+```
+
+The other scheduled bot runs on Sunday do not refresh the backups because the date has already been recorded.
+
+### Independent Backup Updates
+
+Each major is handled independently.
+
+For example, if four feeds are refreshed:
+
+```text
+BSE M25    ✓ Updated
+BSE S25    ✓ Updated
+BEL M25    ✗ Failed → Existing backup preserved
+BEL J26    ✓ Updated
+```
+
+The failure of one feed does not prevent the other valid feeds from being updated.
+
+### Safe File Replacement
+
+The backup refresher does not immediately overwrite the existing backup.
+
+Instead, it:
+
+1. Downloads the Canvas feed.
+2. Checks that the HTTP request succeeded.
+3. Parses the downloaded content as iCalendar data.
+4. Writes the new content to a temporary file.
+5. Replaces the existing backup with the validated temporary file.
+
+Conceptually:
+
+```text
+Existing backup
+      │
+      │ remains untouched
+      ▼
+Download new feed
+      │
+      ▼
+Temporary .tmp file
+      │
+      ▼
+Parse as iCalendar
+      │
+   ┌──┴──┐
+   │     │
+ Valid  Invalid
+   │     │
+   ▼     ▼
+Replace  Delete temporary
+backup   file
+```
+
+This prevents a failed download or invalid Canvas response from destroying a previously working backup.
+
+## Backup Refresh Implementation
+
+The refresh logic is contained in:
+
+```text
+backup-refresh.js
+```
+
+Its main responsibility is to refresh all configured backup files.
+
+The module is intentionally separate from `canvas.js`.
+
+`canvas.js` is responsible for **reading and processing Canvas feeds**, while `backup-refresh.js` is responsible for **maintaining the local backup files**.
+
+## Assignment Processing
+
+After the Canvas feed has been obtained, the bot extracts events that contain:
+
+* An event type of `VEVENT`
+* An assignment title
+* A start/due date
+
+These are converted into assignment objects used by the reminder system.
+
+Example:
+
+```js
+{
+    title: event.summary,
+    dueDate: event.start
+}
+```
+
+## Reminder Schedule
+
+The bot checks assignments at scheduled times throughout the day.
+
+The reminder system is designed to provide progressively more urgent notifications as an assignment deadline approaches.
+
+The exact reminder behavior is controlled by the bot's state and message-processing logic.
+
+## State Management
+
+The bot maintains state so that it knows:
+
+* Which date it is processing.
+* Which assignments have already triggered specific reminders.
+* The current weekly/day progression used by the bot.
+
+The state prevents the same reminder from being repeatedly sent during multiple bot executions.
+
+A new date causes the daily state to be reset.
+
+## WhatsApp
+
+WhatsApp messaging is handled separately from Canvas processing.
+
+The bot first determines what messages need to be sent and then passes the resulting messages to the WhatsApp layer.
+
+This separation allows assignment retrieval and WhatsApp delivery to remain independent parts of the system.
+
+## Environment Variables
+
+Sensitive Canvas feed URLs and other configuration values should be stored in `.env` rather than directly in source code.
+
+Example:
+
+```env
+BSE_M25_FEED=your_canvas_feed_url
+BSE_S25_FEED=your_canvas_feed_url
+BEL_M25_FEED=your_canvas_feed_url
+BEL_J26_FEED=your_canvas_feed_url
+```
+
+The `.env` file should not be committed to version control.
+
+## Running the Bot
+
+Install dependencies:
+
 ```bash
-cp canvas-bot.service canvas-bot.timer ~/.config/systemd/user/
-systemctl --user daemon-reload
-systemctl --user enable --now canvas-bot.timer
-```
-Update the `WorkingDirectory` path in `canvas-bot.service` to match where you actually cloned the repo, since it currently points at a specific `%h/Projects/canvas-bot` path.
-
-## Project structure
-
-```
-canvas_auto_bot/
-├── bot.js                  # Entry point — loads majors, tracks the day counter, runs each cohort
-├── processMajor.js         # Per-cohort orchestration: fetch → organize → decide what to send
-├── scheduler.js            # Splits assignments into "due today" / "due soon" buckets
-├── config/
-│   └── majors.js           # Cohort definitions (feed URL, group name, timing rules)
-├── services/
-│   ├── canvas.js           # Fetches the live Canvas feed, falls back to a local .ics file
-│   ├── whatsapp.js         # Initializes the WhatsApp Web client and sends messages
-│   └── state.js            # Reads/writes daily state so reminders aren't duplicated
-├── messages/
-│   └── message.js          # Builds the four WhatsApp reminder message templates
-├── backupfiles/            # Static .ics fallback calendars, one per cohort
-├── data/                   # Persisted state.json / day.json (created at runtime)
-├── utils/
-│   └── dates.js            # Currently unused placeholder
-├── canvas-bot.service       # systemd unit: runs the bot once
-├── canvas-bot.timer         # systemd timer: fires the unit 3x/day
-└── timer.target.wants/      # systemd install target for the timer
+npm install
 ```
 
-## Notes and limitations
+Start the bot:
 
-- `whatsapp-web.js` is an unofficial client that automates the WhatsApp Web interface — it isn't Meta's official API, so it depends on WhatsApp's web client not changing in breaking ways, and using it may carry some risk to the paired account under WhatsApp's terms of service.
-- Puppeteer's Chromium path is currently hardcoded to `/usr/bin/chromium` in `services/whatsapp.js` — if Chromium is installed elsewhere on your system, update that path.
-- `headless: false` is set for the WhatsApp client, which means it expects a display environment to launch a visible browser window (or needs to run under something like `xvfb` on a headless server).
-- `utils/dates.js` exists in the repo but is currently empty/unused.
-- There's no automated test suite yet.
+```bash
+node bot.js
+```
 
-## Disclaimer
+For continuous operation on Arch Linux, the bot can be managed as a `systemd` service so that it starts automatically and can restart after failures.
 
-This project uses your Canvas calendar feed and an unofficial WhatsApp automation library. Keep your `.env` file (feed URLs, group names) and your `.wwebjs_auth/` session data private — both are already excluded via `.gitignore`, so make sure they stay that way if you fork or modify this project.
+## Adding a New Major
+
+Adding another major/intake should only require adding its configuration.
+
+For example:
+
+```js
+{
+    id: 'bse_j26',
+    feed: process.env.BSE_J26_FEED,
+    backupfile: 'backupfiles/bse_j26.ics'
+}
+```
+
+Then create the corresponding backup file:
+
+```text
+backupfiles/bse_j26.ics
+```
+
+The existing processing and backup-refresh logic automatically handles it because both systems iterate over the same `majors` configuration.
+
+## Design Principles
+
+The project is structured around a few important principles:
+
+### Single Configuration
+
+Major/intake information is defined once and reused throughout the system.
+
+### Separation of Responsibilities
+
+```text
+bot.js
+    ↓
+Controls the workflow
+
+canvas.js
+    ↓
+Fetches and parses Canvas data
+
+backup-refresh.js
+    ↓
+Maintains local Canvas backups
+
+state.js
+    ↓
+Maintains bot state
+
+message.js
+    ↓
+Builds reminder messages
+
+whatsapp.js
+    ↓
+Delivers messages
+```
+
+### Fail Safely
+
+When an external service fails, the bot should preserve the last known working data rather than replacing it with invalid or incomplete data.
+
+### Scale Through Configuration
+
+Adding majors or intakes should require configuration changes rather than duplicated processing code.
+
+### Keep External Dependencies Isolated
+
+Canvas and WhatsApp are external systems. Their failures should not unnecessarily break unrelated parts of the bot.
