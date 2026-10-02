@@ -3,6 +3,10 @@ require('dotenv').config();
 const majors = require('./config/majors');
 
 const {
+    refreshBackups 
+} = require('./backup-refresh');
+
+const {
     initializeWhatsapp
 } = require('./services/whatsapp');
 
@@ -32,8 +36,9 @@ const {
         if (day.day == 6) {
 
             day.day = 0;
-
             day.week++;
+
+	    await refreshBackups(majors);
 
         }else{
             day.day++;

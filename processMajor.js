@@ -37,17 +37,17 @@ async function processMajor(major, hour, today, day) {
 
     }
 
-    console.log("Fetching Canvas feed...");
+    console.log("\tFetching Canvas feed...");
 
     const assignments = await fetchCanvasEvents(major.feed, major.backupfile);
 
-    console.log("Canvas fetched");
+    console.log("\tCanvas fetched");
 
     const { dueToday, dueSoon } = organizeAssignments(assignments, major.daysAhead, major.morningPromotionHour);
 
     const announcedAssignmentPush = !state.sentType1;
 
-    console.log("Processing messages...");
+    console.log("\tProcessing messages...");
 
     if (hour >= 7 && (!state.sentType1 || !state.sentType2)) {
 
@@ -61,7 +61,7 @@ async function processMajor(major, hour, today, day) {
 
             state.sentType1 = true;
 
-	    console.log("\tSent type 1!");
+	    console.log("\t\t\tSent type 1!");
 
 	}
 
@@ -71,7 +71,7 @@ async function processMajor(major, hour, today, day) {
 
             state.sentType2 = true;
 
-	    console.log("\tSent type 2!");
+	    console.log("\t\t\tSent type 2!");
 
         }
 
@@ -87,7 +87,7 @@ async function processMajor(major, hour, today, day) {
 
             state.sentType3 = true;
 
-	    console.log("\tSent type 3!");
+	    console.log("\t\t\tSent type 3!");
 
         }
 
@@ -104,14 +104,14 @@ async function processMajor(major, hour, today, day) {
 
             state.sentType4 = true;
 
-	    console.log("\tSent type 4!");
+	    console.log("\t\t\tSent type 4!");
 
         }
 
     }
 
 
-    console.log("Finished the messaging part!");
+    console.log("\tFinished the messaging part!");
 
 
     if (announcedAssignmentPush) {
