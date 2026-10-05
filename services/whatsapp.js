@@ -94,7 +94,33 @@ async function sendMessage(groupName, message) {
 
 }
 
+
+// Send message to premiums
+
+async function sendPrivateMessage(chatId, message) {
+
+    try {
+
+        const chat = await client.getChatById(chatId);
+
+        if (!chat) {
+
+            throw new Error(`Private chat "${chatId}" not found`);
+
+        }
+
+        await chat.sendMessage(message);
+
+    } catch (err) {
+
+        console.error(err);
+
+    }
+
+}
+
 module.exports = {
     initializeWhatsapp,
-    sendMessage
+    sendMessage,
+    sendPrivateMessage
 };

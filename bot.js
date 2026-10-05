@@ -1,13 +1,15 @@
 require('dotenv').config();
 
-const majors = require('./config/majors');
+const config = require('./config/majors');
 
 const {
     refreshBackups 
 } = require('./backup-refresh');
 
 const {
-    initializeWhatsapp
+    initializeWhatsapp,
+    sendMessage,
+    sendPrivateMessage
 } = require('./services/whatsapp');
 
 const {
@@ -16,8 +18,8 @@ const {
 } = require('./services/state');
 
 const {
-    processMajor
-} = require('./processMajor');
+    processSource
+} = require('./processSource');
 
 (async () => {
 
@@ -38,7 +40,7 @@ const {
             day.day = 0;
             day.week++;
 
-	    await refreshBackups(majors);
+	    await refreshBackups(config.majors, config.premiumUsers);
 
         }else{
             day.day++;
@@ -50,15 +52,42 @@ const {
 
     await initializeWhatsapp();
 
-    for (const major of majors) {
+    for (const major of config.majors) {
 
         console.log(`\nProcessing ${major.name}...`);
 
-        await processMajor(major, hour, today, day);
+        await processSource(
+            major,
+            hour,
+            today,
+            day,
+            message => sendMessage(major.destination, message)
+        );
 
-	console.log(`Done✅\n`);
+        console.log(`Done✅`);
 
-	console.log(`------------------------------`);
+        console.log(`------------------------------`);
+
+    }
+
+    for (const user of config.premiumUsers) {
+
+        console.log(`\nProcessing ${user.name}...`);
+
+        await processSource(
+            user,
+            hour,
+            today,
+            day,
+            message => sendPrivateMessage(
+                user.destination,
+                message
+            )
+        );
+
+        console.log(`Done✅`);
+
+        console.log(`------------------------------`);
 
     }
 

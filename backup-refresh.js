@@ -2,7 +2,7 @@ const fs = require('fs/promises');
 const path = require('path');
 const ical = require('node-ical');
 
-async function refreshBackups(majors) {
+async function refreshBackups(majors, users) {
 
     console.log('\nRefreshing Canvas backups...');
 
@@ -14,6 +14,39 @@ async function refreshBackups(majors) {
         try {
 
             const response = await fetch(major.feed);
+
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+
+            const data = await response.text();
+
+            ical.parseICS(data);
+
+            await fs.writeFile(temp, data);
+            await fs.rename(temp, backup);
+
+            console.log(`\t✓ ${major.name}`);
+
+        } catch (error) {
+
+            console.error(`\t✗ ${major.name}: ${error.message}`);
+
+            try {
+                await fs.unlink(temp);
+            } catch {}
+
+        }
+    }
+
+    for (const user of users) {
+
+        const backup = path.join(__dirname, user.backupfile);
+        const temp = `${backup}.tmp`;
+
+        try {
+
+            const response = await fetch(user.feed);
 
             if (!response.ok) {
                 throw new Error(`HTTP ${response.status}`);

@@ -10,8 +10,6 @@ function createDefaultState(today = '') {
 
         date: today,
 
-        announcedAssignments: [],
-
         sentType1: false,
 
         sentType2: false,
@@ -28,13 +26,27 @@ function readDatabase() {
 
     try {
 
-        return JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
+        const database = JSON.parse(
+            fs.readFileSync(STATE_FILE, 'utf8')
+        );
+
+        if (!database.sources) {
+
+            database.sources = database.majors || {};
+
+            delete database.majors;
+
+            writeDatabase(database);
+
+        }
+
+        return database;
 
     } catch {
 
         return {
 
-            majors: {}
+            sources: {}
 
         };
 
@@ -48,37 +60,35 @@ function writeDatabase(stateDatabase) {
 
 }
 
-function loadState(majorId) {
+function loadState(sourceId) {
 
     const stateDatabase = readDatabase();
 
-    if (!stateDatabase.majors[majorId]) {
+    if (!stateDatabase.sources[sourceId]) {
 
-        stateDatabase.majors[majorId] = createDefaultState();
-
-        writeDatabase(stateDatabase);
+        stateDatabase.sources[sourceId] = createDefaultState();
 
     }
 
-    return stateDatabase.majors[majorId];
+    return stateDatabase.sources[sourceId];
 
 }
 
-function saveState(majorId, state) {
+function saveState(sourceId, state) {
 
     const stateDatabase = readDatabase();
 
-    stateDatabase.majors[majorId] = state;
+    stateDatabase.sources[sourceId] = state;
 
     writeDatabase(stateDatabase);
 
 }
 
-function resetState(majorId, today) {
+function resetState(sourceId, today) {
 
     const state = createDefaultState(today);
 
-    saveState(majorId, state);
+    saveState(sourceId, state);
 
     return state;
 

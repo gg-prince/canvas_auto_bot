@@ -1,35 +1,51 @@
 {
-  "majors": {
+  "sources": {
     "bse-j26": {
-      "date": "",
-      "announcedAssignments": [
-        "Python Basics: Peer Group Review [Introduction_to_Python_Programming_and_Databases]",
-        "Peer Learning Project I [Introduction_to_Python_Programming_and_Databases]"
-      ],
-      "sentType1": true,
+      "date": "2026-10-02",
+      "announcedAssignments": [],
+      "sentType1": false,
       "sentType2": false,
       "sentType3": false,
       "sentType4": false
     },
     "bel-j26": {
-      "date": "",
+      "date": "2026-10-02",
       "announcedAssignments": [
-        "Course Pop Quiz 2 [Complex_Problem_Solving]",
-        "Week 10 (Part 1) Quiz [Introduction_to_Grand_Challenges_and_Opportunities]",
-        "Week 10 (Part 2) Quiz [Introduction_to_Grand_Challenges_and_Opportunities]",
-        "Presentation [Professional_Skills_Lab_1]"
+        "Mid- Point Logbook [Skills_Immersion_1]"
+      ],
+      "sentType1": true,
+      "sentType2": true,
+      "sentType3": true,
+      "sentType4": false
+    },
+    "bel-m25": {
+      "date": "2026-10-02",
+      "announcedAssignments": [
+        "Formative Assessment 1 ( Week 1-4 ): Systems Thinking and Problem Diagnosis [Systems_Thinking_and_Gap_Analysis]",
+        "Cycle 1: Unemployment  [Structured_Controversy]"
       ],
       "sentType1": true,
       "sentType2": false,
       "sentType3": false,
       "sentType4": false
     },
-    "2026-07-02": {
-      "date": "",
-      "announcedAssignments": [],
-      "sentType1": false,
+    "bse-m25": {
+      "date": "2026-10-02",
+      "announcedAssignments": [
+        "PLD Week 5: Project  [Introduction_to_Software_Engineering]",
+        "Mid- Point Logbook [Skills_Immersion_1]"
+      ],
+      "sentType1": true,
       "sentType2": false,
       "sentType3": false,
+      "sentType4": false
+    },
+    "bse-s25": {
+      "date": "2026-10-02",
+      "announcedAssignments": [],
+      "sentType1": true,
+      "sentType2": true,
+      "sentType3": true,
       "sentType4": false
     }
   }
