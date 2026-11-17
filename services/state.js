@@ -16,7 +16,13 @@ function createDefaultState(today = '') {
 
         sentType3: false,
 
-        sentType4: false
+        sentType4: false,
+
+        subscription: {
+            paidDays: 0,
+            usedDays: 0,
+            months: 0
+        }
 
     };
 
@@ -68,9 +74,25 @@ function loadState(sourceId) {
 
         stateDatabase.sources[sourceId] = createDefaultState();
 
+        writeDatabase(stateDatabase);
+
     }
 
-    return stateDatabase.sources[sourceId];
+    const state = stateDatabase.sources[sourceId];
+
+    if (!state.subscription) {
+
+        state.subscription = {
+            paidDays: 0,
+            usedDays: 0,
+            months: 0
+        };
+
+        writeDatabase(stateDatabase);
+
+    }
+
+    return state;
 
 }
 
@@ -106,6 +128,29 @@ function saveDay(day) {
 
 }
 
+function addPaidDays(sourceId, paidDays) {
+
+    const stateDatabase = readDatabase();
+
+    const state = stateDatabase.sources[sourceId];
+
+    if (!state) {
+
+        throw new Error(
+            `State for source "${sourceId}" not found`
+        );
+
+    }
+
+    state.subscription.paidDays =
+        state.subscription.usedDays + paidDays;
+
+    writeDatabase(stateDatabase);
+
+    return state;
+
+}
+
 module.exports = {
 
     loadState,
@@ -116,6 +161,8 @@ module.exports = {
 
     loadDay,
 
-    saveDay
+    saveDay,
+
+    addPaidDays
 
 };

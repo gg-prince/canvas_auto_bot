@@ -10,26 +10,26 @@ async function fetchCanvasEvents(url, backupFilePath) {
 
     try {
 
-	console.log("\tTrying live canvas...");
+	console.log("\t\tTrying live canvas...");
 	events = await ical.fromURL(url);
-	console.log("\tFound live canvas!");
+	console.log("\t\t\tFound live canvas!");
 
     }catch (error){
 
-	console.log(`\tLive canvas not found. Trying local file at: ${backupFilePath}...\n`);
+	console.log(`\t\t\tLive canvas not found. Trying local file at: ${backupFilePath}...\n`);
 
 	try {
     
 	   const rawFileData = await fs.readFile(backupFilePath, 'utf-8');
 	   events = ical.parseICS(rawFileData);
 
-	   console.log("\tFound local file, and now processing!");
+	   console.log("\t\t\t\tFound local file, and now processing!");
 
 	}
 
 	catch (fileError){
 
-	   console.error("\tCouldn't find the file!", fileError.message);
+	   console.error("\t\t\t\tCouldn't find the file!", fileError.message);
 
 	}
     

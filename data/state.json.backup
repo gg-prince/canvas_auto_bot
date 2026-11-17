@@ -1,5 +1,5 @@
 {
-  "sources": {
+  "majors": {
     "bse-j26": {
       "date": "2026-10-02",
       "announcedAssignments": [],
@@ -15,7 +15,7 @@
       ],
       "sentType1": true,
       "sentType2": true,
-      "sentType3": true,
+      "sentType3": false,
       "sentType4": false
     },
     "bel-m25": {
@@ -43,9 +43,9 @@
     "bse-s25": {
       "date": "2026-10-02",
       "announcedAssignments": [],
-      "sentType1": true,
+      "sentType1": false,
       "sentType2": true,
-      "sentType3": true,
+      "sentType3": false,
       "sentType4": false
     }
   }

@@ -1,11 +1,11 @@
-const fs = require('fs/promises');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 const INPUT_FILE_NAME = 'input.txt'; 
 const ENV_FILE_NAME = '../.env';
 
 function parseMultipleData() {
-  try {const path = require('path');
+  try {
     const currentDir = process.cwd();
     const inputPath = path.join(currentDir, INPUT_FILE_NAME);
     const envPath = path.join(currentDir, ENV_FILE_NAME);

@@ -40,7 +40,7 @@ const {
             day.day = 0;
             day.week++;
 
-	    await refreshBackups(config.majors, config.premiumUsers);
+	    await refreshBackups(config.majors);
 
         }else{
             day.day++;
@@ -71,6 +71,12 @@ const {
     }
 
     for (const user of config.premiumUsers) {
+
+	if(!user.active){
+
+	    continue;
+
+	}
 
         console.log(`\nProcessing ${user.name}...`);
 

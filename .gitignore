@@ -1,10 +1,4 @@
 .env
 .wwebjs_auth/
 node_modules/
-.wwebjs_cache/
-.gitignore
-package-lock.json
-package.json
-backupfiles/
-
-
+state.json

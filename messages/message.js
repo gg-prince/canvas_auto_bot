@@ -29,7 +29,7 @@ function formatType1(assignments) {
         return null;
     }
 
-    console.log("\tCreating type 1...");
+    console.log("\t\tChecking type 1...");
 
     const lines = assignments.map((a, index) => {
 
@@ -53,7 +53,7 @@ function formatType2(assignments) {
         return null;
     }
 
-    console.log("\tCreating type 2...");
+    console.log("\t\tChecking type 2...");
 
     let s = assignments.length > 1 ? "S" : "";
 
@@ -70,7 +70,7 @@ function formatType3(assignments) {
         return null;
     }
 
-    console.log("\tCreating type 3...");
+    console.log("\t\tChecking type 3...");
 
     return (
         '🚨 *A FEW HOURS REMAINING*\n\n' +
@@ -85,7 +85,7 @@ function formatType4(assignments) {
         return null;
     }
 
-    console.log("\tCreating type 4...");
+    console.log("\t\tChecking type 4...");
 
     return (
         '🚨🚨 *MAKE SURE YOU SUBMITTED*\n\n' +

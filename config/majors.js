@@ -13,7 +13,7 @@ module.exports = {
 
             backupfile: '../backupfile/bckup.ics',
 
-            destination: process.env.destination_NAME,
+            destination: process.env.GROUP_NAME,
 
             daysAhead: 7,
 
@@ -32,7 +32,7 @@ module.exports = {
 
             backupfile: '../backupfile/bel_j26.ics',
 
-            destination: process.env.destination_NAME_BEL,
+            destination: process.env.GROUP_NAME_BEL,
 
             daysAhead: 7,
 
@@ -51,7 +51,7 @@ module.exports = {
 
             backupfile: '../backupfile/bel_m25.ics',
 
-            destination: process.env.destination_NAME_BEL_M25,
+            destination: process.env.GROUP_NAME_BEL_M25,
 
             daysAhead: 7,
 
@@ -70,7 +70,7 @@ module.exports = {
 
             backupfile: '../backupfile/bse_m26.ics',
 
-            destination: process.env.destination_NAME_BSE_M25,
+            destination: process.env.GROUP_NAME_BSE_M25,
 
             daysAhead: 7,
 
@@ -89,7 +89,7 @@ module.exports = {
 
             backupfile: '../backupfile/bse_s26.ics',
 
-            destination: process.env.destination_NAME_BSE_S25,
+            destination: process.env.GROUP_NAME_BSE_S25,
 
             daysAhead: 7,
 
@@ -120,7 +120,9 @@ module.exports = {
 
             type1Frequency: 2,
 
-            morningPromotionHour: 10
+            morningPromotionHour: 10,
+
+	    active: false
 
         },
         {
@@ -156,7 +158,10 @@ module.exports = {
 
             type1Frequency: 2,
 
-            morningPromotionHour: 10
+            morningPromotionHour: 10,
+
+            active: false
+
 
         },
         {
@@ -174,7 +179,10 @@ module.exports = {
 
             type1Frequency: 2,
 
-            morningPromotionHour: 10
+            morningPromotionHour: 10,
+
+            active: false
+
 
         },
         {
@@ -192,7 +200,10 @@ module.exports = {
 
             type1Frequency: 2,
 
-            morningPromotionHour: 10
+            morningPromotionHour: 10,
+
+            active: false
+
 
         },
         {
@@ -210,7 +221,10 @@ module.exports = {
 
             type1Frequency: 2,
 
-            morningPromotionHour: 10
+            morningPromotionHour: 10,
+
+            active: true
+
 
         },
         {
@@ -228,7 +242,10 @@ module.exports = {
 
             type1Frequency: 2,
 
-            morningPromotionHour: 10
+            morningPromotionHour: 10,
+
+            active: false
+
 
         },
         {
@@ -246,7 +263,10 @@ module.exports = {
 
             type1Frequency: 2,
 
-            morningPromotionHour: 10
+            morningPromotionHour: 10,
+
+            active: false
+
 
         },
         {
@@ -264,7 +284,10 @@ module.exports = {
 
             type1Frequency: 2,
 
-            morningPromotionHour: 10
+            morningPromotionHour: 10,
+
+            active: false
+
 
         },
 
