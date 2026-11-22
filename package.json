@@ -1,0 +1,25 @@
+{
+  "name": "canvas-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bot": "node bot.js",
+    "website": "node website/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "node-ical": "^0.26.1",
+    "puppeteer": "^25.3.0",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "file:../whatsapp-web.js"
+  },
+  "allowScripts": {
+    "puppeteer@24.38.0": true
+  }
+}

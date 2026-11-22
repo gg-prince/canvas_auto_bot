@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DueTask Admin</title>
+    <link rel="stylesheet" href="/admin/admin.css">
+    <link rel="stylesheet" href="/admin/dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            <a href="/" class="brand">
+                <span class="brand-mark">D</span>
+                DueTask
+            </a>
+
+            <nav>
+                <a href="#overview" class="nav-item active">
+                    <span>▦</span> Overview
+                </a>
+
+                <a href="#intakes" class="nav-item">
+                    <span>◉</span> Intakes
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <button id="logout-button" class="logout-button">
+                    ↪ Log out
+                </button>
+            </div>
+        </aside>
+
+
+        <main class="main">
+
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">ADMINISTRATION</p>
+                    <h1>Dashboard</h1>
+                </div>
+
+                <div class="admin-badge">
+                    <span class="status-dot"></span>
+                    Administrator
+                </div>
+            </header>
+
+
+            <section id="overview">
+
+                <div class="welcome">
+                    <div>
+                        <h2>Welcome back 👋</h2>
+                        <p>Here's what's happening with DueTask.</p>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+
+                    <article class="stat-card">
+                        <span>Total intakes</span>
+                        <h2 id="total-intakes">—</h2>
+                    </article>
+
+                    <article class="stat-card">
+                        <span>Active groups</span>
+                        <h2 id="active-intakes">—</h2>
+                    </article>
+
+                    <article class="stat-card">
+                        <span>Pending registrations</span>
+                        <h2 id="pending-registrations">—</h2>
+                    </article>
+
+                    <article class="stat-card">
+                        <span>Students registered</span>
+                        <h2 id="total-registrations">—</h2>
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <section id="intakes" class="intakes-section">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Intakes</h2>
+                        <p>Manage WhatsApp groups and student registrations.</p>
+                    </div>
+
+                    <button id="refresh-button" class="secondary-button">
+                        ↻ Refresh
+                    </button>
+                </div>
+
+
+                <div class="filters">
+
+                    <input
+                        id="search-input"
+                        type="search"
+                        placeholder="Search intakes..."
+                    >
+
+                    <select id="filter-select">
+                        <option value="all">All intakes</option>
+                        <option value="active">Active</option>
+                        <option value="inactive">Inactive</option>
+                        <option value="pending">Pending registration</option>
+                    </select>
+
+                </div>
+
+
+                <div id="intakes-container" class="intakes-container"></div>
+
+                <p id="dashboard-message" class="dashboard-message"></p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="/admin/dashboard.js"></script>
+
+</body>
+</html>
+

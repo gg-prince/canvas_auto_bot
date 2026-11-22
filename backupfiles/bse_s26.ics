@@ -1,0 +1,191 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:icalendar-ruby
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kevin Karagire Ishimwe Calendar (Canvas)
+X-WR-CALDESC:Calendar events for the user\, Kevin Karagire Ishimwe
+BEGIN:VEVENT
+DTSTAMP:20260518T170700Z
+UID:event-assignment-42068
+DTSTART;VALUE=DATE;VALUE=DATE:20260831
+CLASS:PUBLIC
+SEQUENCE:0
+SUMMARY:Financial Planning for Young Adults: Risk Management Quiz [Financia
+ l Planning for Young Adults]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2973&month=08&year=2026#assignment_42068
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260923T081200Z
+UID:event-assignment-override-9100
+DTSTART;VALUE=DATE;VALUE=DATE:20260904
+CLASS:PUBLIC
+DESCRIPTION:
+SEQUENCE:0
+SUMMARY:Certificate Submission (May 2026_January 2023) [Financial Planning 
+ for Young Adults]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2973&month=09&year=2026#assignment_42074
+X-ALT-DESC;FMTTYPE=text/html:
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260923T112700Z
+UID:event-assignment-44003
+DTSTART;VALUE=DATE;VALUE=DATE:20261002
+CLASS:PUBLIC
+DESCRIPTION:Over the past couple of weeks\, you have built the full toolkit
+  needed to construct a persuasive academic essay: deconstructing a prompt\
+ , formulating a thesis\, outlining your ideas\, developing paragraphs with
+  PEEL\, reasoning from credible evidence\, and avoiding logical fallacies.
+  This assignment asks you to bring all of it together in a single\, polish
+ ed argumentative essay on a topic grounded in the African context. This i
+ s not simply a writing exercise. It is a test of whether you can take a po
+ sition on a real\, contested issue affecting the continent\, defend it wit
+ h credible evidence\, and engage seriously with the strongest opposing vie
+ w\, rather than the easiest one to knock down.\n\n-------------------\nLea
+ rning Objectives\n-------------------\n\nThis assignment assesses your abi
+ lity to:\n\n* Construct a clear\, specific\, and arguable thesis statement
+ .\n\n* Organise an essay using a logical introduction-body-conclusion stru
+ cture.\n\n* Develop body paragraphs using the PEEL method\, with each para
+ graph clearly supporting the thesis.\n\n* Integrate credible evidence and 
+ explain its relevance through sound reasoning.\n\n* Acknowledge and respon
+ d to a counterargument.\n\n* Apply correct APA in-text citation and refere
+ ncing.\n\n* Write with clarity\, grammatical accuracy\, and an appropriate
+  academic tone.\n\n-----------------\nChoose One Prompt\n-----------------
+ \n\nSelect one of the following prompts. Each is deliberately broad enough
+  to allow you to narrow it toward a specific angle or country/regional cas
+ e\, which you should do in your thesis statement. Must include the title "
+ A Different World"\n\n* Regional integration vs. bilateral trade: Do you t
+ hink African governments should prioritise regional economic integration (
+ e.g.\, through the African Continental Free Trade Area) over bilateral tra
+ de agreements with non-African partners?\n\n* Platform regulation and demo
+ cracy: Should social media platforms be more strictly regulated in African
+  “democracies” to curb misinformation and protect the integrity of ele
+ ctions?\n\n* Youth entrepreneurship vs. structural reform: Is promoting yo
+ uth entrepreneurship the most effective solution to unemployment in Sub-Sa
+ haran Africa\, or does it place too much responsibility on individuals rat
+ her than systemic reform?\n\n* Aid conditionality and sovereignty: Can Afr
+ ican governments push back more firmly against conditionalities attached t
+ o foreign aid in order to protect national policy sovereignty?\n\n--------
+ ----\nRequirements\n------------\n\n* Length: 1\,500 to 2\,000 words (excl
+ uding reference list).\n\n* Structure: Introduction (hook\, background\, t
+ hesis) → body paragraphs (PEEL-structured\, one per major supporting poi
+ nt) → at least one counterargument-and-rebuttal paragraph → conclusion
+  (restated thesis\, synthesis\, closing thought).\n\n* Evidence: A minimum
+  of 6 credible sources (academic journals\, reputable news outlets\, insti
+ tutional reports\, or recognised policy bodies)\, including at least 2 pee
+ r-reviewed academic sources. Wikipedia\, personal blogs\, and AI chat outp
+ uts are not acceptable sources.\n\n* Citation style: APA 7th Edition\, bot
+ h in-text and in a full reference list.\n\n* Formatting: 12 pt Times New 
+ Roman\, double-spaced\, page numbers.\n\n \n\n------------------\nAcadem
+ ic Integrity\n------------------\n\nThis assignment must reflect your own 
+ original thinking\, research\, and writing. As per course policy\, submiss
+ ions with an AI-detection score above 20% will be capped at half marks. Du
+ plicate submissions or unattributed use of others' work will be treated as
+  plagiarism under ALU's academic integrity policy. If you use AI tools to 
+ brainstorm or check grammar\, this must be declared per module guidelines.
+ \n\n----------\nSubmission\n----------\n\nSubmit as a single PDF or Word d
+ ocument through the course portal by the stated deadline. Late submissions
+  are subject to the standard late-penalty policy. 
+SEQUENCE:0
+SUMMARY:Formative 1: Argumentative Essay [Communicating_for_Impact]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_3099&month=10&year=2026#assignment_44003
+X-ALT-DESC;FMTTYPE=text/html:<p><span>Over the past couple of weeks\, you h
+ ave built the full toolkit needed to construct a persuasive academic essay
+ : deconstructing a prompt\, formulating a thesis\, outlining your ideas\, 
+ developing paragraphs with PEEL\, reasoning from credible evidence\, and a
+ voiding logical fallacies. This assignment asks you to bring all of it tog
+ ether in a single\, polished argumentative essay on a topic grounded in th
+ e African context.&nbsp\;</span><span>This is not simply a writing exercis
+ e. It is a test of whether you can take a position on a real\, contested i
+ ssue affecting the continent\, defend it with credible evidence\, and enga
+ ge seriously with the strongest opposing view\, rather than the easiest on
+ e to knock down.</span></p>\n<h2><span style="font-size: 14pt\;"><strong>L
+ earning Objectives</strong></span></h2>\n<p><span>This assignment assesses
+  your ability to:</span></p>\n<ol>\n<li aria-level="1"><span>Construct a c
+ lear\, specific\, and arguable thesis statement.</span></li>\n<li aria-lev
+ el="1"><span>Organise an essay using a logical introduction-body-conclusio
+ n structure.</span></li>\n<li aria-level="1"><span>Develop body paragraphs
+  using the PEEL method\, with each paragraph clearly supporting the thesis
+ .</span></li>\n<li aria-level="1"><span>Integrate credible evidence and ex
+ plain its relevance through sound reasoning.</span></li>\n<li aria-level="
+ 1"><span>Acknowledge and respond to a counterargument.</span></li>\n<li ar
+ ia-level="1"><span>Apply correct APA in-text citation and referencing.</sp
+ an></li>\n<li aria-level="1"><span>Write with clarity\, grammatical accura
+ cy\, and an appropriate academic tone.</span></li>\n</ol>\n<h2><span style
+ ="font-size: 14pt\;"><strong>Choose One Prompt</strong></span></h2>\n<p><s
+ pan>Select </span><strong>one</strong><span> of the following prompts. Eac
+ h is deliberately broad enough to allow you to narrow it toward a specific
+  angle or country/regional case\, which you should do in your thesis state
+ ment. <span style="color: #ffffff\;">Must include the title "A Different W
+ orld"</span></span></p>\n<ol>\n<li aria-level="1"><strong>Regional integra
+ tion vs. bilateral trade:</strong><span> Do you think African governments 
+ should prioritise regional economic integration (e.g.\, through the Africa
+ n Continental Free Trade Area) over bilateral trade agreements with non-Af
+ rican partners?</span></li>\n<li aria-level="1"><strong>Platform regulatio
+ n and democracy:</strong><span> Should social media platforms be more stri
+ ctly regulated in African “democracies” to curb misinformation and pro
+ tect the integrity of elections?</span></li>\n<li aria-level="1"><strong>Y
+ outh entrepreneurship vs. structural reform:</strong><span> Is promoting y
+ outh entrepreneurship the most effective solution to unemployment in Sub-S
+ aharan Africa\, or does it place too much responsibility on individuals ra
+ ther than systemic reform?</span></li>\n<li aria-level="1"><strong>Aid con
+ ditionality and sovereignty:</strong><span> Can African governments push b
+ ack more firmly against conditionalities attached to foreign aid in order 
+ to protect national policy sovereignty?</span></li>\n</ol>\n<h2><span styl
+ e="font-size: 14pt\;"><strong>Requirements</strong></span></h2>\n<ul>\n<li
+  aria-level="1"><strong>Length:</strong><span> 1\,500 to 2\,000 words (exc
+ luding reference list).</span></li>\n<li aria-level="1"><strong>Structure:
+ </strong><span> Introduction (hook\, background\, thesis) → body paragra
+ phs (PEEL-structured\, one per major supporting point) → at least one co
+ unterargument-and-rebuttal paragraph → conclusion (restated thesis\, syn
+ thesis\, closing thought).</span></li>\n<li aria-level="1"><strong>Evidenc
+ e:</strong><span> A minimum of 6 credible sources (academic journals\, rep
+ utable news outlets\, institutional reports\, or recognised policy bodies)
+ \, including at least 2 peer-reviewed academic sources. </span><strong>Wik
+ ipedia\, personal blogs\, and AI chat outputs are not acceptable sources.<
+ /strong></li>\n<li aria-level="1"><strong>Citation style:</strong><span> A
+ PA 7th Edition\, both in-text and in a full reference list.</span></li>\n<
+ li aria-level="1"><strong>Formatting:</strong><span> 12 pt</span><span>&nb
+ sp\;Times New Roman\,</span><span>&nbsp\;double-spaced\, page numbers.</sp
+ an></li>\n</ul>\n<p>&nbsp\;</p>\n<h2><span style="font-size: 14pt\;"><stro
+ ng>Academic Integrity</strong></span></h2>\n<p><span>This assignment must 
+ reflect your own original thinking\, research\, and writing. As per course
+  policy\, submissions with an AI-detection score above </span><strong>20%<
+ /strong><span> will be capped at half marks. Duplicate submissions or unat
+ tributed use of others' work will be treated as plagiarism under ALU's aca
+ demic integrity policy. If you use AI tools to brainstorm or check grammar
+ \, this must be declared per module guidelines.</span></p>\n<h2><span styl
+ e="font-size: 14pt\;"><strong>Submission</strong></span></h2>\n<p><span>Su
+ bmit as a single PDF or Word document through the course portal by the sta
+ ted deadline. Late submissions are subject to the standard late-penalty po
+ licy.&nbsp\;</span></p>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260923T094800Z
+UID:event-assignment-override-10864
+DTSTART;VALUE=DATE;VALUE=DATE:20261031
+CLASS:PUBLIC
+DESCRIPTION:
+SEQUENCE:0
+SUMMARY:Final Quiz (Graded) (Consent at ALU- S26) [Consent at ALU/ALCHE]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2959&month=10&year=2026#assignment_43396
+X-ALT-DESC;FMTTYPE=text/html:
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260917T114000Z
+UID:event-assignment-42061
+DTSTART;VALUE=DATE;VALUE=DATE:20270130
+CLASS:PUBLIC
+DESCRIPTION:
+SEQUENCE:0
+SUMMARY:Financial Planning for Young Adults [Financial Planning for Young A
+ dults]
+URL;VALUE=URI:https://alueducation.instructure.com/calendar?include_context
+ s=course_2973&month=01&year=2027#assignment_42061
+X-ALT-DESC;FMTTYPE=text/html:
+END:VEVENT
+END:VCALENDAR

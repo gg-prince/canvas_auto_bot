@@ -1,0 +1,156 @@
+{
+  "campaignImage": "/assets/candidates-placeholder.svg",
+  "campaignCaption": "Add your partnered candidates' campaign photo and message here.",
+  "intakes": [
+    {
+      "id": "bse-j24",
+      "major": "BSE",
+      "name": "January 2024",
+      "code": "BSE · JAN 24",
+      "active": false,
+      "groupLink": ""
+    },
+    {
+      "id": "bse-m24",
+      "major": "BSE",
+      "name": "May 2024",
+      "code": "BSE · MAY 24",
+      "active": false,
+      "groupLink": ""
+    },
+    {
+      "id": "bse-s24",
+      "major": "BSE",
+      "name": "September 2024",
+      "code": "BSE · SEP 24",
+      "active": false,
+      "groupLink": ""
+    },
+    {
+      "id": "bse-j25",
+      "major": "BSE",
+      "name": "January 2025",
+      "code": "BSE · JAN 25",
+      "active": false,
+      "groupLink": ""
+    },
+    {
+      "id": "bse-m25",
+      "major": "BSE",
+      "name": "May 2025",
+      "code": "BSE · MAY 25",
+      "active": true,
+      "groupLink": "https://chat.whatsapp.com/HYz3tkxHyOf2ZLbAjMOo68?s=cl&p=i&iam=2",
+      "destination": "Due_Task_BSE_M25"
+    },
+    {
+      "id": "bse-s25",
+      "major": "BSE",
+      "name": "September 2025",
+      "code": "BSE · SEP 25",
+      "active": true,
+      "groupLink": "https://chat.whatsapp.com/BFEPsR5GU9p3s0KQiVlXPh?s=cl&p=i&iam=2",
+      "destination": "Due_Task_BSE_S25"
+    },
+    {
+      "id": "bse-j26",
+      "major": "BSE",
+      "name": "January 2026",
+      "code": "BSE · JAN 26",
+      "active": true,
+      "groupLink": "https://chat.whatsapp.com/H4Vd4qb4aTu9lU2CZa03FD?s=cl&p=i&iam=2",
+      "destination": "Due_Task_BSE_J26"
+    },
+    {
+      "id": "bse-m26",
+      "major": "BSE",
+      "name": "May 2026",
+      "code": "BSE · MAY 26",
+      "active": false,
+      "groupLink": "https://chat.whatsapp.com/FEoEEJamyONGaOleHF9Z0s?s=cl&p=i&iam=2",
+      "destination": "Due_Task_BSE_M26"
+    },
+    {
+      "id": "bse-s26",
+      "major": "BSE",
+      "name": "September 2026",
+      "code": "BSE · SEP 26",
+      "active": false,
+      "groupLink": ""
+    },
+    {
+      "id": "bel-j24",
+      "major": "BEL",
+      "name": "January 2024",
+      "code": "BEL · JAN 24",
+      "active": false,
+      "groupLink": ""
+    },
+    {
+      "id": "bel-m24",
+      "major": "BEL",
+      "name": "May 2024",
+      "code": "BEL · MAY 24",
+      "active": false,
+      "groupLink": ""
+    },
+    {
+      "id": "bel-s24",
+      "major": "BEL",
+      "name": "September 2024",
+      "code": "BEL · SEP 24",
+      "active": false,
+      "groupLink": ""
+    },
+    {
+      "id": "bel-j25",
+      "major": "BEL",
+      "name": "January 2025",
+      "code": "BEL · JAN 25",
+      "active": false,
+      "groupLink": ""
+    },
+    {
+      "id": "bel-m25",
+      "major": "BEL",
+      "name": "May 2025",
+      "code": "BEL · MAY 25",
+      "active": true,
+      "groupLink": "https://chat.whatsapp.com/KmKdtIecE5hJ6opRxTv6hD?s=cl&p=i&iam=2",
+      "destination": "Due_Task_BEL_M25"
+    },
+    {
+      "id": "bel-s25",
+      "major": "BEL",
+      "name": "September 2025",
+      "code": "BEL · SEP 25",
+      "active": false,
+      "groupLink": ""
+    },
+    {
+      "id": "bel-j26",
+      "major": "BEL",
+      "name": "January 2026",
+      "code": "BEL · JAN 26",
+      "active": true,
+      "groupLink": "https://chat.whatsapp.com/Cq6jB45LXnVFQZTlCaXdeS?s=cl&p=i&iam=2",
+      "destination": "Due_Task_BEL_J26"
+    },
+    {
+      "id": "bel-m26",
+      "major": "BEL",
+      "name": "May 2026",
+      "code": "BEL · MAY 26",
+      "active": false,
+      "groupLink": ""
+    },
+    {
+      "id": "bel-s26",
+      "major": "BEL",
+      "name": "September 2026",
+      "code": "BEL · SEP 26",
+      "active": false,
+      "groupLink": ""
+    }
+  ]
+}

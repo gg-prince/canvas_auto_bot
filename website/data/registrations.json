@@ -1,0 +1,13 @@
+{
+  "intakes": {
+    "bse-m26": {
+      "status": "verified",
+      "primary": {
+        "submittedAt": "2026-11-20T12:57:50.986Z",
+        "feed": "https://alueducation.instructure.com/feeds/calendars/user_6OpHN5hBHyjcejytZE1xMrYpKzVLfFgdIziVegLG.ics",
+        "eventCount": 15
+      },
+      "backups": []
+    }
+  }
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff8ed">
+  <title>DueTask — Never miss a deadline</title>
+  <meta name="description" content="Find your intake and get coursework reminders through WhatsApp.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="DueTask home"><span class="brand-mark">D</span><span>DueTask</span></a>
+    <nav><a href="#intakes">Find your intake</a><a href="#how">How it works</a></nav>
+    <a class="header-cta" href="#intakes">Get started <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Your coursework, one step ahead</p>
+        <h1>Deadlines happen.<br><span>Don't let them sneak up.</span></h1>
+        <p class="hero-text">Get timely assignment reminders in your intake's WhatsApp group. Find your intake below and join in a few clicks.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#intakes">Find my intake <span>↓</span></a><a class="text-link" href="#how">How to get started</a></div>
+        <div class="hero-note"><span class="note-icon">✦</span> Built by students, for students.</div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-phone">
+          <img
+              src="/assets/phone.png"
+              alt="DueTask WhatsApp assignment reminders displayed on an iPhone"
+          >
+        </div>
+        <div class="art-sun"></div><img class="cow-sticker" src="/assets/cow.svg" alt=""><span class="art-spark spark-one">✳</span><span class="art-spark spark-two">✦</span>
+      </div>
+    </section>
+
+    <section class="campaign-section" id="campaign">
+      <div class="campaign-image-wrap"><img id="campaign-image" src="/assets/candidates-placeholder.svg" alt="Candidate partnership campaign photo"></div>
+      <div class="campaign-copy"><p class="eyebrow">Student-powered initiative</p><h2>Good ideas work<br>better <span>together.</span></h2><p>We’re teaming up with student leaders to make staying on top of coursework a little easier for everyone. Find your intake, join the reminders, and focus on doing your best.</p><div class="campaign-caption" id="campaign-caption">A student initiative supporting one another.</div></div>
+    </section>
+
+    <section class="intakes-section" id="intakes">
+      <div class="section-heading"><div><p class="eyebrow">Find your people</p><h2>Choose your intake</h2><p>Pick your program and intake to see how to join.</p></div>
+      <div class="filter-group">
+        <label for="yearFilter">Year</label>
+        <select id="yearFilter">
+            <option value="">All years</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+        </select>
+    </div>
+
+    <div class="filter-group">
+        <label for="monthFilter">Intake month</label>
+        <select id="monthFilter">
+            <option value="">All months</option>
+            <option value="January">January</option>
+            <option value="May">May</option>
+            <option value="September">September</option>
+        </select>
+    </div>
+    </div>
+    </div>
+      <div class="filter-row" id="filters"><button class="filter active" data-filter="all">All programs</button></div>
+      <div class="intake-grid" id="intake-grid"><div class="loading-card">Loading intakes…</div></div>
+      <div class="empty-state" id="empty-state" hidden><img src="/assets/cow.svg" alt=""><h3>No intake found</h3><p>Try another search. The cows are still looking.</p></div>
+    </section>
+
+    <section class="how-section" id="how"><div class="how-heading"><p class="eyebrow">Simple as that</p><h2>Three steps to fewer surprises.</h2></div><div class="steps-preview"><article><span class="step-number">01</span><h3>Find your intake</h3><p>Choose the program and intake you are in.</p></article><article><span class="step-number">02</span><h3>Connect Canvas. Only if <span class = "status pending">Pending...</span></h3><p>Share your Canvas calendar link to activate or join your intake.</p></article><article><span class="step-number">03</span><h3>Get reminders</h3><p>Join your WhatsApp group and keep deadlines on your radar.</p></article></div></section>
+  </main>
+  <footer><a class="brand" href="/"><span class="brand-mark">D</span><span>DueTask</span></a><p id="admin-trigger">Less deadline stress.</p><span class="footer-cow">Letsgoo 🐄</span></footer>
+  <script src="/app.js" defer></script>
+</body>
+</html>

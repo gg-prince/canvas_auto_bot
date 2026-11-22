@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Canvas Bot
+
+[Timer]
+OnCalendar=*-*-* 06:58:00
+OnCalendar=*-*-* 11:58:00
+OnCalendar=*-*-* 17:58:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

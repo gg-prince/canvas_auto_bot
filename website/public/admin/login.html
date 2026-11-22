@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Login — DueTask</title>
+
+    <link rel="stylesheet" href="/admin/admin.css">
+</head>
+
+<body>
+
+    <main class="login-container">
+
+        <a href="/" class="brand">
+            <span class="brand-mark">D</span>
+            <span>DueTask</span>
+        </a>
+
+        <section class="login-card">
+
+            <div class="admin-icon">🔐</div>
+
+            <p class="eyebrow">Restricted access</p>
+
+            <h1>Welcome back.</h1>
+
+            <p class="subtitle">
+                Sign in to manage intakes and registrations.
+            </p>
+
+            <form id="login-form">
+
+                <label for="password">Admin password</label>
+
+                <div class="password-wrapper">
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                        required
+                        autocomplete="current-password"
+                    >
+
+                    <button
+                        type="button"
+                        id="toggle-password"
+                        class="toggle-password"
+                    >
+                        Show
+                    </button>
+
+                </div>
+
+                <p id="login-message" class="message"></p>
+
+                <button type="submit" class="login-button">
+                    Sign in <span>→</span>
+                </button>
+
+            </form>
+
+        </section>
+
+        <footer>
+            <a href="/">← Back to DueTask</a>
+        </footer>
+
+    </main>
+
+    <script src="/admin/admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff8ed">
+  <title>Connect Canvas — DueTask</title><link rel="stylesheet" href="/style.css">
+</head>
+<body class="submit-page">
+  <header class="site-header"><a class="brand" href="/"><span class="brand-mark">D</span><span>DueTask</span></a><nav><a href="/">← Back to intakes</a></nav></header>
+  <main class="submit-main">
+    <div class="submit-top"><div><p class="eyebrow">Let's get you set up</p><h1 id="submit-title">Connect your Canvas calendar</h1><p id="submit-intro">Follow the steps below. If you prefer, watch the video tutorial.</p></div><img src="/assets/cow.svg" alt="" class="submit-cow"></div>
+    <section class="guide-card"><h2>Written guide</h2><ol class="guide-steps">
+      <li><span class="guide-num">1</span><div><b>Open Canvas</b><p>Log in to your school's Canvas account using a browser.</p></div></li>
+      <li><span class="guide-num">2</span><div><b>Open Calendar</b><p>Go to Calendar. Find the calendar feed option (usually near the bottom of the calendar sidebar).</p></div></li>
+      <li><span class="guide-num">3</span><div><b>Copy the calendar feed link</b><p>Choose the calendar feed link and copy its URL. It should be a calendar/iCalendar feed—not your password or a login link.</p></div></li>
+      <li><span class="guide-num">4</span><div><b>Paste it below</b><p>Submit the link. We'll check that it can be read before saving it.</p></div></li>
+    </ol>
+    <div class="video-block"><div class="video-heading"><div><h3>Prefer a video?</h3><p>Watch the walkthrough below.</p></div><span class="video-pill">Optional</span></div><video id="tutorial-video" controls playsinline preload="metadata" hidden><source src="assets/canvas-tutorial.mp4" type="video/mp4">Your browser doesn't support video.</video></div>
+    </section>
+    <section class="form-card"><div class="form-card-heading"><h2>Submit your Canvas link</h2><p id="form-intake-label">Intake: loading…</p></div><form id="registration-form"><input type="hidden" id="intake-id" name="intakeId"><label for="canvas-link">Canvas calendar feed URL</label><input id="canvas-link" name="feed" type="url" inputmode="url" placeholder="https://…/calendar/feed/…" required autocomplete="url"><p class="privacy-note">We only need the calendar feed link. Never submit your Canvas password.</p><button class="button button-primary submit-button" type="submit">Submit my link <span>→</span></button><div class="form-message" id="form-message" role="status" aria-live="polite"></div></form></section>
+    <p class="back-link"><a href="/">← Back to intake list</a></p>
+  </main>
+  <footer><a class="brand" href="/"><span class="brand-mark">D</span><span>DueTask</span></a><p>Small reminders. Less deadline stress.</p><span class="footer-cow">moo, you got this 🐄</span></footer>
+  <script src="/submit.js" defer></script>
+</body>
+</html>
