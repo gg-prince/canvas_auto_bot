@@ -766,7 +766,7 @@ color:var(--orange)
     height: 450px;
     width: auto;
     max-width: 380px;
-    z-index: 100;
+    z-index: 1;
     object-fit: contain;
 }
 
